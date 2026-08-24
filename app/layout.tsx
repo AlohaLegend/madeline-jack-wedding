@@ -15,7 +15,7 @@ const sans = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3001'),
+  metadataBase: new URL('https://madeline-jack-wedding.liammoherlihy.chatgpt.site'),
   title: 'Madeline & Jack — Our Wedding',
   description: 'Celebrate Madeline and Jack at Dawnridge in Beverly Hills.',
   openGraph: {

@@ -26,7 +26,7 @@ const faqs = [
 export default function Home() {
   return (
     <PasswordGate
-      backgroundImage={asset('/images/dawnridge-entry.webp')}
+      backgroundImage={asset('/images/dawnridge-entry-hq.webp')}
       monogram={asset('/images/monogram.png')}
     >
     <main>
@@ -42,7 +42,7 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home" aria-labelledby="hero-title">
-        <div className="hero-image" aria-hidden="true" style={{ backgroundImage: `url('${asset('/images/dawnridge-entry.webp')}')` }} />
+        <div className="hero-image" aria-hidden="true" style={{ backgroundImage: `url('${asset('/images/dawnridge-entry-hq.webp')}')` }} />
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-card">
           <Image className="hero-monogram" src={asset('/images/monogram.png')} alt="Madeline and Jack monogram" width={1300} height={398} priority />

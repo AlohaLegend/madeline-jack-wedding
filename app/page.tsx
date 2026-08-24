@@ -1,5 +1,8 @@
 import Image from 'next/image';
 
+const asset = (path: string) =>
+  `${process.env.GITHUB_PAGES === 'true' ? '/madeline-jack-wedding' : ''}${path}`;
+
 const faqs = [
   {
     question: 'When should I RSVP?',
@@ -33,10 +36,10 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home" aria-labelledby="hero-title">
-        <div className="hero-image" aria-hidden="true" />
+        <div className="hero-image" aria-hidden="true" style={{ backgroundImage: `url('${asset('/images/dawnridge-entry.webp')}')` }} />
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-card">
-          <Image className="hero-monogram" src="/images/monogram.png" alt="Madeline and Jack monogram" width={1300} height={398} priority />
+          <Image className="hero-monogram" src={asset('/images/monogram.png')} alt="Madeline and Jack monogram" width={1300} height={398} priority />
           <h1 id="hero-title" className="sr-only">Madeline and Jack are getting married</h1>
           <p>Are getting married</p>
         </div>
@@ -50,7 +53,7 @@ export default function Home() {
         <div className="story-heading">
           <p>OUR LOVE<br />FOR ADVENTURE</p>
           <figure>
-            <Image src="/images/story-polaroid.webp" alt="Madeline and Jack with their dogs at the beach" width={1200} height={1458} />
+            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dogs at the beach" width={1200} height={1458} />
           </figure>
           <p>(AND EACH<br />OTHER)</p>
         </div>
@@ -62,7 +65,7 @@ export default function Home() {
       </section>
 
       <section className="photo-break" aria-label="Madeline and Jack at the beach">
-        <Image src="/images/couple-embrace.webp" alt="Madeline and Jack embracing on the beach" width={1800} height={1219} />
+        <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack embracing on the beach" width={1800} height={1219} />
         <p>“Home is wherever we are together.”</p>
       </section>
 
@@ -96,7 +99,7 @@ export default function Home() {
 
       <section className="venue-section" aria-labelledby="venue-title">
         <div className="venue-image tall-image">
-          <Image src="/images/dawnridge-ceiling.webp" alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" />
+          <Image src={asset('/images/dawnridge-ceiling.webp')} alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" />
         </div>
         <div className="venue-copy">
           <p className="eyebrow">The setting</p>
@@ -107,7 +110,7 @@ export default function Home() {
             memorable place to celebrate with our favorite people.
           </p>
           <div className="mini-image">
-            <Image src="/images/dawnridge-interior.webp" alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" />
+            <Image src={asset('/images/dawnridge-interior.webp')} alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" />
           </div>
         </div>
       </section>
@@ -116,10 +119,10 @@ export default function Home() {
         <p className="eyebrow">A few favorites</p>
         <h2 id="gallery-title">Us, lately.</h2>
         <div className="gallery-grid">
-          <figure className="gallery-one"><Image src="/images/couple-kiss.webp" alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" /></figure>
-          <figure className="gallery-two"><Image src="/images/beach-walk.webp" alt="Madeline and Jack walking their dogs on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" /></figure>
-          <figure className="gallery-three"><Image src="/images/couple-dogs.webp" alt="Madeline and Jack with their dogs" fill sizes="(max-width: 700px) 90vw, 26vw" /></figure>
-          <figure className="gallery-four"><Image src="/images/dogs-running.webp" alt="Madeline and Jack's dogs running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" /></figure>
+          <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" /></figure>
+          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dogs on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" /></figure>
+          <figure className="gallery-three"><Image src={asset('/images/couple-dogs.webp')} alt="Madeline and Jack with their dogs" fill sizes="(max-width: 700px) 90vw, 26vw" /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/dogs-running.webp')} alt="Madeline and Jack's dogs running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" /></figure>
         </div>
       </section>
 
@@ -154,7 +157,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">Good to know</p>
           <h2 id="faq-title">Questions,<br />answered.</h2>
-          <Image src="/images/dawnridge-table.webp" alt="Vintage glassware at Dawnridge" width={564} height={846} />
+          <Image src={asset('/images/dawnridge-table.webp')} alt="Vintage glassware at Dawnridge" width={564} height={846} />
         </div>
         <div className="faq-list">
           {faqs.map((faq, index) => (
@@ -167,7 +170,7 @@ export default function Home() {
       </section>
 
       <section className="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
-        <Image className="rsvp-monogram" src="/images/monogram.png" alt="" width={1300} height={398} />
+        <Image className="rsvp-monogram" src={asset('/images/monogram.png')} alt="" width={1300} height={398} />
         <p className="eyebrow">We hope you’ll be there</p>
         <h2 id="rsvp-title">RSVPs will open soon.</h2>
         <p>

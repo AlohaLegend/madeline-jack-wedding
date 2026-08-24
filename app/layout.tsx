@@ -15,20 +15,20 @@ const sans = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://madeline-jack-wedding.liammoherlihy.chatgpt.site'),
+  metadataBase: new URL('https://alohalegend.github.io/madeline-jack-wedding/'),
   title: 'Madeline & Jack — Our Wedding',
   description: 'Celebrate Madeline and Jack at Dawnridge in Beverly Hills.',
   openGraph: {
     title: 'Madeline & Jack — Our Wedding',
     description: 'A celebration at Dawnridge in Beverly Hills.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1536, height: 801, alt: 'Madeline and Jack — A celebration at Dawnridge' }],
+    images: [{ url: 'https://alohalegend.github.io/madeline-jack-wedding/og.png', width: 1536, height: 801, alt: 'Madeline and Jack — A celebration at Dawnridge' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Madeline & Jack — Our Wedding',
     description: 'A celebration at Dawnridge in Beverly Hills.',
-    images: ['/og.png'],
+    images: ['https://alohalegend.github.io/madeline-jack-wedding/og.png'],
   },
 };
 

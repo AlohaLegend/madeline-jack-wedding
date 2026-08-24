@@ -1,0 +1,186 @@
+import Image from 'next/image';
+
+const faqs = [
+  {
+    question: 'When should I RSVP?',
+    answer: 'RSVPs are not open quite yet. Your formal invitation will include the date and everything you need to respond here.',
+  },
+  {
+    question: 'Where will the celebration take place?',
+    answer: 'The celebration will take place at Dawnridge in Beverly Hills, California. The full address and arrival notes will be shared directly with invited guests.',
+  },
+  {
+    question: 'What should I wear?',
+    answer: 'Dress guidance is coming with the full weekend details. Think celebratory, comfortable, and ready for an evening in the garden.',
+  },
+  {
+    question: 'Can I bring a guest or my children?',
+    answer: 'Please refer to the names listed on your formal invitation. If you have a question about your party, reach out to Madeline or Jack directly.',
+  },
+];
+
+export default function Home() {
+  return (
+    <main>
+      <header className="site-header">
+        <a className="wordmark" href="#home" aria-label="Madeline and Jack — home">M <span>·</span> J</a>
+        <nav aria-label="Primary navigation">
+          <a href="#story">Our story</a>
+          <a href="#details">The day</a>
+          <a href="#travel">Travel</a>
+          <a className="nav-rsvp" href="#rsvp">RSVP</a>
+        </nav>
+      </header>
+
+      <section className="hero" id="home" aria-labelledby="hero-title">
+        <div className="hero-image" aria-hidden="true" />
+        <div className="hero-shade" aria-hidden="true" />
+        <div className="hero-card">
+          <Image className="hero-monogram" src="/images/monogram.png" alt="Madeline and Jack monogram" width={1300} height={398} priority />
+          <h1 id="hero-title" className="sr-only">Madeline and Jack are getting married</h1>
+          <p>Are getting married</p>
+        </div>
+        <p className="hero-note hero-note-left">A celebration of love</p>
+        <p className="hero-note hero-note-right">Dawnridge · Beverly Hills</p>
+        <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
+      </section>
+
+      <section className="story-section" id="story" aria-labelledby="story-title">
+        <p className="eyebrow">Our favorite kind of story</p>
+        <div className="story-heading">
+          <p>OUR LOVE<br />FOR ADVENTURE</p>
+          <figure>
+            <Image src="/images/story-polaroid.webp" alt="Madeline and Jack with their dogs at the beach" width={1200} height={1458} />
+          </figure>
+          <p>(AND EACH<br />OTHER)</p>
+        </div>
+        <h2 id="story-title">Still writing the best part.</h2>
+        <p className="story-copy">
+          Two people, two dogs, countless beach walks—and one very good reason to bring
+          everyone they love together. More of Madeline and Jack’s story is coming soon.
+        </p>
+      </section>
+
+      <section className="photo-break" aria-label="Madeline and Jack at the beach">
+        <Image src="/images/couple-embrace.webp" alt="Madeline and Jack embracing on the beach" width={1800} height={1219} />
+        <p>“Home is wherever we are together.”</p>
+      </section>
+
+      <section className="details-section" id="details" aria-labelledby="details-title">
+        <div className="section-number">01</div>
+        <p className="eyebrow">Save a little room for magic</p>
+        <h2 id="details-title">The celebration</h2>
+        <p className="section-intro">
+          We’re gathering at one of Los Angeles’ most enchanting private estates.
+          The full date, time, and weekend schedule will be shared here soon.
+        </p>
+        <div className="detail-grid">
+          <article>
+            <span>Where</span>
+            <h3>Dawnridge</h3>
+            <p>Beverly Hills<br />California</p>
+          </article>
+          <article>
+            <span>When</span>
+            <h3>Coming soon</h3>
+            <p>Formal invitation<br />to follow</p>
+          </article>
+          <article>
+            <span>The mood</span>
+            <h3>Garden glamour</h3>
+            <p>A little romance<br />and a lot of dancing</p>
+          </article>
+        </div>
+        <a className="text-link" href="#rsvp">RSVP details <span>↘</span></a>
+      </section>
+
+      <section className="venue-section" aria-labelledby="venue-title">
+        <div className="venue-image tall-image">
+          <Image src="/images/dawnridge-ceiling.webp" alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" />
+        </div>
+        <div className="venue-copy">
+          <p className="eyebrow">The setting</p>
+          <h2 id="venue-title">An estate made for wonder.</h2>
+          <p>
+            Hidden in the hills of Beverly Hills, Dawnridge is a world of hand-painted
+            rooms, storied gardens, and unexpected details. We can’t imagine a more
+            memorable place to celebrate with our favorite people.
+          </p>
+          <div className="mini-image">
+            <Image src="/images/dawnridge-interior.webp" alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" />
+          </div>
+        </div>
+      </section>
+
+      <section className="gallery-section" aria-labelledby="gallery-title">
+        <p className="eyebrow">A few favorites</p>
+        <h2 id="gallery-title">Us, lately.</h2>
+        <div className="gallery-grid">
+          <figure className="gallery-one"><Image src="/images/couple-kiss.webp" alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" /></figure>
+          <figure className="gallery-two"><Image src="/images/beach-walk.webp" alt="Madeline and Jack walking their dogs on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" /></figure>
+          <figure className="gallery-three"><Image src="/images/couple-dogs.webp" alt="Madeline and Jack with their dogs" fill sizes="(max-width: 700px) 90vw, 26vw" /></figure>
+          <figure className="gallery-four"><Image src="/images/dogs-running.webp" alt="Madeline and Jack's dogs running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" /></figure>
+        </div>
+      </section>
+
+      <section className="travel-section" id="travel" aria-labelledby="travel-title">
+        <div className="section-number">02</div>
+        <p className="eyebrow">Plan your stay</p>
+        <h2 id="travel-title">Meet us in Los Angeles.</h2>
+        <p className="section-intro">
+          Hotel recommendations, transportation notes, and the weekend guide are on
+          their way. For now, plan around Beverly Hills, California.
+        </p>
+        <div className="travel-grid">
+          <article>
+            <p className="card-number">01</p>
+            <h3>Arriving</h3>
+            <p>Airport and local transportation guidance will be added with the formal details.</p>
+          </article>
+          <article>
+            <p className="card-number">02</p>
+            <h3>Staying</h3>
+            <p>Our recommended hotels and any room-block information will appear here.</p>
+          </article>
+          <article>
+            <p className="card-number">03</p>
+            <h3>Exploring</h3>
+            <p>We’ll share a short list of the places we love for coffee, dinner, and a day out.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="faq-section" id="faq" aria-labelledby="faq-title">
+        <div>
+          <p className="eyebrow">Good to know</p>
+          <h2 id="faq-title">Questions,<br />answered.</h2>
+          <Image src="/images/dawnridge-table.webp" alt="Vintage glassware at Dawnridge" width={564} height={846} />
+        </div>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <details key={faq.question}>
+              <summary><span>{String(index + 1).padStart(2, '0')}</span>{faq.question}</summary>
+              <p>{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
+        <Image className="rsvp-monogram" src="/images/monogram.png" alt="" width={1300} height={398} />
+        <p className="eyebrow">We hope you’ll be there</p>
+        <h2 id="rsvp-title">RSVPs will open soon.</h2>
+        <p>
+          Once formal invitations are sent, you’ll be able to find your party and
+          respond right here. For now, all you need to do is save the feeling.
+        </p>
+        <a className="button" href="#home">Back to the beginning</a>
+      </section>
+
+      <footer>
+        <p>Madeline <i>&amp;</i> Jack</p>
+        <span>Made with love · Los Angeles</span>
+      </footer>
+    </main>
+  );
+}

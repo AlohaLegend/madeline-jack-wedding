@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import PasswordGate from './password-gate';
 
 const asset = (path: string) =>
   `${process.env.GITHUB_PAGES === 'true' ? '/madeline-jack-wedding' : ''}${path}`;
@@ -24,6 +25,10 @@ const faqs = [
 
 export default function Home() {
   return (
+    <PasswordGate
+      backgroundImage={asset('/images/dawnridge-entry.webp')}
+      monogram={asset('/images/monogram.png')}
+    >
     <main>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Madeline and Jack — home">M <span>·</span> J</a>
@@ -31,6 +36,7 @@ export default function Home() {
           <a href="#story">Our story</a>
           <a href="#details">The day</a>
           <a href="#travel">Travel</a>
+          <a href="#registry">Registry</a>
           <a className="nav-rsvp" href="#rsvp">RSVP</a>
         </nav>
       </header>
@@ -53,7 +59,7 @@ export default function Home() {
         <div className="story-heading">
           <p>OUR LOVE<br />FOR ADVENTURE</p>
           <figure>
-            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dogs at the beach" width={1200} height={1458} />
+            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dogs at the beach" width={1200} height={1458} loading="eager" />
           </figure>
           <p>(AND EACH<br />OTHER)</p>
         </div>
@@ -65,7 +71,7 @@ export default function Home() {
       </section>
 
       <section className="photo-break" aria-label="Madeline and Jack at the beach">
-        <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack embracing on the beach" width={1800} height={1219} />
+        <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack embracing on the beach" width={1800} height={1219} loading="eager" />
         <p>“Home is wherever we are together.”</p>
       </section>
 
@@ -99,7 +105,7 @@ export default function Home() {
 
       <section className="venue-section" aria-labelledby="venue-title">
         <div className="venue-image tall-image">
-          <Image src={asset('/images/dawnridge-ceiling.webp')} alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" />
+          <Image src={asset('/images/dawnridge-ceiling.webp')} alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" loading="eager" />
         </div>
         <div className="venue-copy">
           <p className="eyebrow">The setting</p>
@@ -110,7 +116,7 @@ export default function Home() {
             memorable place to celebrate with our favorite people.
           </p>
           <div className="mini-image">
-            <Image src={asset('/images/dawnridge-interior.webp')} alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" />
+            <Image src={asset('/images/dawnridge-interior.webp')} alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" loading="eager" />
           </div>
         </div>
       </section>
@@ -119,10 +125,10 @@ export default function Home() {
         <p className="eyebrow">A few favorites</p>
         <h2 id="gallery-title">Us, lately.</h2>
         <div className="gallery-grid">
-          <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" /></figure>
-          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dogs on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" /></figure>
-          <figure className="gallery-three"><Image src={asset('/images/couple-dogs.webp')} alt="Madeline and Jack with their dogs" fill sizes="(max-width: 700px) 90vw, 26vw" /></figure>
-          <figure className="gallery-four"><Image src={asset('/images/dogs-running.webp')} alt="Madeline and Jack's dogs running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" /></figure>
+          <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
+          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dogs on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
+          <figure className="gallery-three"><Image src={asset('/images/couple-dogs.webp')} alt="Madeline and Jack with their dogs" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/dogs-running.webp')} alt="Madeline and Jack's dogs running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
         </div>
       </section>
 
@@ -153,11 +159,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="registry-section" id="registry" aria-labelledby="registry-title">
+        <div className="registry-art" aria-hidden="true">
+          <Image src={asset('/images/monogram.png')} alt="" width={1300} height={398} />
+        </div>
+        <div>
+          <p className="eyebrow">With love and gratitude</p>
+          <h2 id="registry-title">Your presence is the present.</h2>
+          <p>
+            Celebrating together is what matters most to us. For those who have asked,
+            registry details will be shared here once they’re ready.
+          </p>
+          <span className="registry-note">Registry links coming soon</span>
+        </div>
+      </section>
+
       <section className="faq-section" id="faq" aria-labelledby="faq-title">
         <div>
           <p className="eyebrow">Good to know</p>
           <h2 id="faq-title">Questions,<br />answered.</h2>
-          <Image src={asset('/images/dawnridge-table.webp')} alt="Vintage glassware at Dawnridge" width={564} height={846} />
+          <Image src={asset('/images/dawnridge-table.webp')} alt="Vintage glassware at Dawnridge" width={564} height={846} loading="eager" />
         </div>
         <div className="faq-list">
           {faqs.map((faq, index) => (
@@ -185,5 +206,6 @@ export default function Home() {
         <span>Made with love · Los Angeles</span>
       </footer>
     </main>
+    </PasswordGate>
   );
 }

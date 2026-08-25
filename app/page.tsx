@@ -126,8 +126,8 @@ export default function Home() {
         <div className="gallery-grid">
           <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
           <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dog on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
-          <figure className="gallery-three"><Image src={asset('/images/couple-dogs.webp')} alt="Madeline and Jack with their dog" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
-          <figure className="gallery-four"><Image src={asset('/images/dogs-running.webp')} alt="Madeline and Jack's dog running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
+          <figure className="gallery-three"><Image src={asset('/images/couple-dog.webp')} alt="Madeline and Jack with their dog" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/dog-running.webp')} alt="Madeline and Jack's dog running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
         </div>
       </section>
 
@@ -202,7 +202,7 @@ export default function Home() {
 
       <footer>
         <p>Madeline <i>&amp;</i> Jack</p>
-        <span>Made with love · Los Angeles</span>
+        <span>Dawnridge · Beverly Hills</span>
       </footer>
     </main>
     </PasswordGate>

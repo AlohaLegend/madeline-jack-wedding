@@ -35,8 +35,13 @@ const faqs = [
   },
   {
     question: 'Where should I stay?',
-    answer: 'We recommend staying in Beverly Hills. The Beverly Hills Hotel is the closest luxury option to the venue, while The Maybourne, SIXTY, and Avalon put you near restaurants and shops. More details are in the travel section above.',
+    answer: 'We recommend staying in or just outside Beverly Hills. The Beverly Hills Hotel is the closest luxury option, The Maybourne is the most walkable, Hotel 850 SVB is the small design-led pick, and Avalon is the most relaxed. More details are in the travel section above.',
   },
+];
+
+// The layout supports multiple paragraphs; replace this array with the couple's final story copy.
+const loveStoryParagraphs = [
+  'Madeline and Jack spend a lot of time near the beach with their dog. They’re looking forward to having everyone they love in one place for the wedding.',
 ];
 
 const hotels = [
@@ -55,11 +60,11 @@ const hotels = [
     href: 'https://www.maybourne.com/en/hotels/the-maybourne-beverly-hills',
   },
   {
-    name: 'SIXTY Beverly Hills',
-    label: 'Boutique pick',
-    address: '9360 Wilshire Boulevard',
-    description: 'A modern boutique hotel with a rooftop pool and a central location near Beverly Drive, Rodeo Drive, and plenty of places to eat.',
-    href: 'https://www.sixtyhotels.com/destinations/california/sixty-beverly-hills',
+    name: 'Hotel 850 SVB',
+    label: 'Small design hotel',
+    address: '850 North San Vicente Boulevard',
+    description: 'A 23-room hotel with Rita Konig interiors, a residential feel, breakfast in the living room, and a roof deck. It sits between Beverly Hills and West Hollywood.',
+    href: 'https://www.hotel850svb.com/',
   },
   {
     name: 'Avalon Hotel Beverly Hills',
@@ -78,16 +83,16 @@ const nearbyGuide = [
     href: 'https://www.chaumontbakery.com/',
   },
   {
-    name: 'Spago Beverly Hills',
-    type: 'Dinner',
-    description: 'Wolfgang Puck’s Beverly Hills flagship. Reserve ahead if you want to make a night of it.',
-    href: 'https://wolfgangpuck.com/restaurants/spago-beverly-hills/',
+    name: 'The Cheese Store of Beverly Hills',
+    type: 'Lunch & provisions',
+    description: 'A neighborhood institution since 1967, now with a cafe for excellent sandwiches and a deep counter of cheese, wine, and picnic supplies.',
+    href: 'https://cheesestore.com/',
   },
   {
-    name: 'Rodeo Drive',
-    type: 'Walk & shop',
-    description: 'An easy walk through the center of Beverly Hills, with shops, architecture, and Beverly Gardens Park nearby.',
-    href: 'https://www.rodeodrive-bh.com/for-your-visit',
+    name: 'La Dolce Vita',
+    type: 'Dinner',
+    description: 'A small, old-school Italian dining room in Beverly Hills with red booths, low light, and a menu built for a long dinner. Reserve ahead.',
+    href: 'https://www.ladolcevitabeverlyhills.com/',
   },
   {
     name: 'Greystone Mansion',
@@ -102,10 +107,16 @@ const nearbyGuide = [
     href: 'https://parks.lacounty.gov/virginia-robinson-gardens/',
   },
   {
-    name: 'The Fountain Coffee Room',
-    type: 'Classic Beverly Hills',
-    description: 'A small counter inside The Beverly Hills Hotel serving breakfast, lunch, milkshakes, and pie since 1949.',
-    href: 'https://www.dorchestercollection.com/los-angeles/the-beverly-hills-hotel/restaurants-bars/the-fountain-coffee-room',
+    name: 'Schindler House',
+    type: 'Art & architecture',
+    description: 'A landmark 1922 house and exhibition space in West Hollywood. Timed tickets are recommended, and it is a rewarding stop for design lovers.',
+    href: 'https://www.makcenter.org/planyourvisit',
+  },
+  {
+    name: 'Beverly Hills Farmers’ Market',
+    type: 'Sunday morning',
+    description: 'A certified neighborhood market held every Sunday from 8 AM to 1 PM, with produce, bread, prepared food, and free two-hour parking.',
+    href: 'https://www.beverlyhills.gov/488/Farmers-Market',
   },
 ];
 
@@ -151,10 +162,12 @@ export default function Home() {
           <p>(AND EACH<br />OTHER)</p>
         </div>
         <h2 id="story-title">A lot of good days together.</h2>
-        <p className="story-copy">
-          Madeline and Jack spend a lot of time near the beach with their dog. They’re
-          looking forward to having everyone they love in one place for the wedding.
-        </p>
+        <div className="story-copy-layout">
+          <p className="story-copy-label">Madeline &amp; Jack</p>
+          <div className="story-copy">
+            {loveStoryParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
+        </div>
       </section>
 
       <section className="photo-break" aria-label="Madeline and Jack at the beach">
@@ -218,7 +231,7 @@ export default function Home() {
           <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
           <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dog on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
           <figure className="gallery-three"><Image src={asset('/images/couple-dog.webp')} alt="Madeline and Jack with their dog" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
-          <figure className="gallery-four"><Image src={asset('/images/dog-running.webp')} alt="Madeline and Jack's dog running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/beach-family.webp')} alt="Madeline and Jack with their dog at the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
         </div>
       </section>
 
@@ -252,7 +265,7 @@ export default function Home() {
         </div>
         <div className="hotel-heading">
           <p className="eyebrow">Where to stay</p>
-          <h3>Four good options.</h3>
+          <h3>Four places to compare.</h3>
           <p>Rates change by date, so compare the hotel’s direct rate before booking. Any room-block information will be added here.</p>
         </div>
         <div className="hotel-grid">

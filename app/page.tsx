@@ -48,6 +48,7 @@ const hotels = [
   {
     name: 'The Beverly Hills Hotel',
     label: 'Closest luxury option',
+    price: '$$$$',
     address: '9641 Sunset Boulevard',
     description: 'The most convenient splurge for Dawnridge, with historic rooms, bungalows, the Polo Lounge, and a quiet setting north of Sunset.',
     href: 'https://www.dorchestercollection.com/los-angeles/the-beverly-hills-hotel',
@@ -55,6 +56,7 @@ const hotels = [
   {
     name: 'The Maybourne Beverly Hills',
     label: 'Best walkable location',
+    price: '$$$$',
     address: '225 North Canon Drive',
     description: 'A polished stay beside Beverly Cañon Gardens, one block from Rodeo Drive and an easy walk to central Beverly Hills restaurants.',
     href: 'https://www.maybourne.com/en/hotels/the-maybourne-beverly-hills',
@@ -62,6 +64,7 @@ const hotels = [
   {
     name: 'Hotel 850 SVB',
     label: 'Small design hotel',
+    price: '$$$',
     address: '850 North San Vicente Boulevard',
     description: 'A 23-room hotel with Rita Konig interiors, a residential feel, breakfast in the living room, and a roof deck. It sits between Beverly Hills and West Hollywood.',
     href: 'https://www.hotel850svb.com/',
@@ -69,6 +72,7 @@ const hotels = [
   {
     name: 'Avalon Hotel Beverly Hills',
     label: 'Relaxed alternative',
+    price: '$$',
     address: '9400 West Olympic Boulevard',
     description: 'A quieter mid-century hotel centered around a pool. It is a good option for guests who want Beverly Hills without staying in the busiest part of town.',
     href: 'https://www.avalon-hotel.com/beverly-hills/',
@@ -266,12 +270,18 @@ export default function Home() {
         <div className="hotel-heading">
           <p className="eyebrow">Where to stay</p>
           <h3>Four places to compare.</h3>
-          <p>Rates change by date, so compare the hotel’s direct rate before booking. Any room-block information will be added here.</p>
+          <p>The symbols are a relative guide, not quoted nightly rates. Compare direct prices before booking. Any room-block information will be added here.</p>
         </div>
         <div className="hotel-grid">
           {hotels.map((hotel, index) => (
             <article key={hotel.name}>
-              <div className="hotel-topline"><span>{String(index + 1).padStart(2, '0')}</span><span>{hotel.label}</span></div>
+              <div className="hotel-topline">
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <span className="hotel-meta">
+                  <span>{hotel.label}</span>
+                  <span className="hotel-price" aria-label={`Relative price tier ${hotel.price.length} of 4`}>{hotel.price}</span>
+                </span>
+              </div>
               <h4>{hotel.name}</h4>
               <p className="hotel-address">{hotel.address}</p>
               <p>{hotel.description}</p>

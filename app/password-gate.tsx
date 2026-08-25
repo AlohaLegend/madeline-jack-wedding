@@ -63,7 +63,7 @@ export default function PasswordGate({ children, backgroundImage, monogram }: Pa
           <p className="password-error" id="password-error" aria-live="polite">{error}</p>
         </form>
       </section>
-      <p className="password-footer">Made with love · Los Angeles</p>
+      <p className="password-footer">Madeline &amp; Jack · Los Angeles</p>
     </main>
   );
 }

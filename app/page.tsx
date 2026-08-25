@@ -7,7 +7,7 @@ const asset = (path: string) =>
 const faqs = [
   {
     question: 'When should I RSVP?',
-    answer: 'RSVPs are not open quite yet. Your formal invitation will include the date and everything you need to respond here.',
+    answer: 'RSVPs are not open yet. Your formal invitation will include the deadline and instructions for responding here.',
   },
   {
     question: 'Where will the celebration take place?',
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'What should I wear?',
-    answer: 'Dress guidance is coming with the full weekend details. Think celebratory, comfortable, and ready for an evening in the garden.',
+    answer: 'We’ll share the dress code with the full wedding details. The celebration will include time in the garden.',
   },
   {
     question: 'Can I bring a guest or my children?',
@@ -31,7 +31,7 @@ export default function Home() {
     >
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Madeline and Jack — home">M <span>·</span> J</a>
+        <a className="wordmark" href="#home" aria-label="Madeline and Jack, home">M <span>·</span> J</a>
         <nav aria-label="Primary navigation">
           <a href="#story">Our story</a>
           <a href="#details">The day</a>
@@ -49,39 +49,39 @@ export default function Home() {
           <h1 id="hero-title" className="sr-only">Madeline and Jack are getting married</h1>
           <p>Are getting married</p>
         </div>
-        <p className="hero-note hero-note-left">A celebration of love</p>
+        <p className="hero-note hero-note-left">Madeline &amp; Jack</p>
         <p className="hero-note hero-note-right">Dawnridge · Beverly Hills</p>
         <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
       </section>
 
       <section className="story-section" id="story" aria-labelledby="story-title">
-        <p className="eyebrow">Our favorite kind of story</p>
+        <p className="eyebrow">How we got here</p>
         <div className="story-heading">
           <p>OUR LOVE<br />FOR ADVENTURE</p>
           <figure>
-            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dogs at the beach" width={1200} height={1458} loading="eager" />
+            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dog at the beach" width={1200} height={1458} loading="eager" />
           </figure>
           <p>(AND EACH<br />OTHER)</p>
         </div>
-        <h2 id="story-title">Still writing the best part.</h2>
+        <h2 id="story-title">A lot of good days together.</h2>
         <p className="story-copy">
-          Two people, two dogs, countless beach walks—and one very good reason to bring
-          everyone they love together. More of Madeline and Jack’s story is coming soon.
+          Madeline and Jack spend a lot of time near the beach with their dog. They’re
+          looking forward to having everyone they love in one place for the wedding.
         </p>
       </section>
 
       <section className="photo-break" aria-label="Madeline and Jack at the beach">
         <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack embracing on the beach" width={1800} height={1219} loading="eager" />
-        <p>“Home is wherever we are together.”</p>
+        <p>A very good day at the beach.</p>
       </section>
 
       <section className="details-section" id="details" aria-labelledby="details-title">
         <div className="section-number">01</div>
-        <p className="eyebrow">Save a little room for magic</p>
+        <p className="eyebrow">The wedding day</p>
         <h2 id="details-title">The celebration</h2>
         <p className="section-intro">
-          We’re gathering at one of Los Angeles’ most enchanting private estates.
-          The full date, time, and weekend schedule will be shared here soon.
+          We’ll celebrate at Dawnridge, a private estate in Beverly Hills. The date,
+          timing, and full schedule will be shared here as soon as plans are final.
         </p>
         <div className="detail-grid">
           <article>
@@ -96,8 +96,8 @@ export default function Home() {
           </article>
           <article>
             <span>The mood</span>
-            <h3>Garden glamour</h3>
-            <p>A little romance<br />and a lot of dancing</p>
+            <h3>Garden party</h3>
+            <p>Dinner, drinks<br />and plenty of dancing</p>
           </article>
         </div>
         <a className="text-link" href="#rsvp">RSVP details <span>↘</span></a>
@@ -109,11 +109,10 @@ export default function Home() {
         </div>
         <div className="venue-copy">
           <p className="eyebrow">The setting</p>
-          <h2 id="venue-title">An estate made for wonder.</h2>
+          <h2 id="venue-title">Tucked into the hills.</h2>
           <p>
-            Hidden in the hills of Beverly Hills, Dawnridge is a world of hand-painted
-            rooms, storied gardens, and unexpected details. We can’t imagine a more
-            memorable place to celebrate with our favorite people.
+            Dawnridge is a private estate filled with hand-painted rooms, lush gardens,
+            and details collected over many years. We’re excited to share it with you.
           </p>
           <div className="mini-image">
             <Image src={asset('/images/dawnridge-interior.webp')} alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" loading="eager" />
@@ -126,9 +125,9 @@ export default function Home() {
         <h2 id="gallery-title">Us, lately.</h2>
         <div className="gallery-grid">
           <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
-          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dogs on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
-          <figure className="gallery-three"><Image src={asset('/images/couple-dogs.webp')} alt="Madeline and Jack with their dogs" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
-          <figure className="gallery-four"><Image src={asset('/images/dogs-running.webp')} alt="Madeline and Jack's dogs running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
+          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dog on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
+          <figure className="gallery-three"><Image src={asset('/images/couple-dogs.webp')} alt="Madeline and Jack with their dog" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/dogs-running.webp')} alt="Madeline and Jack's dog running on the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
         </div>
       </section>
 
@@ -137,8 +136,8 @@ export default function Home() {
         <p className="eyebrow">Plan your stay</p>
         <h2 id="travel-title">Meet us in Los Angeles.</h2>
         <p className="section-intro">
-          Hotel recommendations, transportation notes, and the weekend guide are on
-          their way. For now, plan around Beverly Hills, California.
+          We’ll add hotel recommendations, transportation notes, and a weekend guide
+          once the plans are set. For now, plan around Beverly Hills, California.
         </p>
         <div className="travel-grid">
           <article>
@@ -164,11 +163,11 @@ export default function Home() {
           <Image src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
         </div>
         <div>
-          <p className="eyebrow">With love and gratitude</p>
-          <h2 id="registry-title">Your presence is the present.</h2>
+          <p className="eyebrow">Registry</p>
+          <h2 id="registry-title">Details coming soon.</h2>
           <p>
-            Celebrating together is what matters most to us. For those who have asked,
-            registry details will be shared here once they’re ready.
+            We’re still putting the registry together. We’ll add the links here when
+            everything is ready.
           </p>
           <span className="registry-note">Registry links coming soon</span>
         </div>
@@ -195,8 +194,8 @@ export default function Home() {
         <p className="eyebrow">We hope you’ll be there</p>
         <h2 id="rsvp-title">RSVPs will open soon.</h2>
         <p>
-          Once formal invitations are sent, you’ll be able to find your party and
-          respond right here. For now, all you need to do is save the feeling.
+          When formal invitations go out, you’ll be able to find your party and
+          respond right here.
         </p>
         <a className="button" href="#home">Back to the beginning</a>
       </section>

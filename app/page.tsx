@@ -159,11 +159,11 @@ export default function Home() {
       <section className="story-section" id="story" aria-labelledby="story-title">
         <p className="eyebrow">How we got here</p>
         <div className="story-heading">
-          <p>OUR LOVE<br />FOR ADVENTURE</p>
+          <p>OUR BEST DAYS<br />NEAR THE WATER</p>
           <figure>
             <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dog at the beach" width={1200} height={1458} loading="eager" />
           </figure>
-          <p>(AND EACH<br />OTHER)</p>
+          <p>(USUALLY WITH<br />THE DOG)</p>
         </div>
         <h2 id="story-title">A lot of good days together.</h2>
         <div className="story-copy-layout">
@@ -171,6 +171,11 @@ export default function Home() {
           <div className="story-copy">
             {loveStoryParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
+        </div>
+        <div className="personal-details" aria-label="A few things about Madeline and Jack">
+          <p><span>Most likely found</span>Near the beach</p>
+          <p><span>Usually accompanied by</span>One very loved dog</p>
+          <p><span>Looking forward to</span>Everyone together at Dawnridge</p>
         </div>
       </section>
 
@@ -181,30 +186,31 @@ export default function Home() {
 
       <section className="details-section" id="details" aria-labelledby="details-title">
         <div className="section-number">01</div>
-        <p className="eyebrow">Schedule at a glance</p>
+        <p className="eyebrow">The plan, as it takes shape</p>
         <h2 id="details-title">The wedding weekend</h2>
         <p className="section-intro">
-          The celebration will take place at Dawnridge in Beverly Hills. We’ll add the
-          date, times, attire, and full event schedule as soon as they are confirmed.
+          The celebration will take place at Dawnridge in Beverly Hills. The formal
+          invitation will carry the date and timing, and this page will become the full
+          weekend guide as plans are finalized.
         </p>
         <div className="weekend-grid">
           <article>
             <span>Arrival day</span>
-            <h3>Welcome to Los Angeles</h3>
-            <p>Plan to settle into Beverly Hills before wedding events begin. Any welcome plans will be posted here.</p>
-            <strong>Details to come</strong>
+            <h3>Settle into Beverly Hills</h3>
+            <p>Give yourself time to arrive, check in, and get comfortable before the celebration begins. Any welcome plans will be posted here.</p>
+            <strong>Welcome plans will follow</strong>
           </article>
           <article>
             <span>Wedding day</span>
             <h3>Ceremony &amp; reception</h3>
             <p>Dawnridge<br />Beverly Hills, California</p>
-            <strong>Date and time to come</strong>
+            <strong>Timing will follow</strong>
           </article>
           <article>
             <span>The next morning</span>
             <h3>One more hello</h3>
             <p>If a farewell gathering is added, the time and location will appear here.</p>
-            <strong>Details to come</strong>
+            <strong>Any plans will appear here</strong>
           </article>
         </div>
         <p className="weekend-note">The formal invitation is the final word on guest names, attire, and event timing.</p>
@@ -229,8 +235,8 @@ export default function Home() {
       </section>
 
       <section className="gallery-section" aria-labelledby="gallery-title">
-        <p className="eyebrow">A few favorites</p>
-        <h2 id="gallery-title">Us, lately.</h2>
+        <p className="eyebrow">A few favorite days</p>
+        <h2 id="gallery-title">Mostly near the water.</h2>
         <div className="gallery-grid">
           <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
           <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dog on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
@@ -294,9 +300,9 @@ export default function Home() {
       <section className="guide-section" id="guide" aria-labelledby="guide-title">
         <div className="guide-heading">
           <div className="section-number">03</div>
-          <p className="eyebrow">If you have a little time</p>
-          <h2 id="guide-title">Nearby guide</h2>
-          <p>A short list for coffee, dinner, a walk, or a quiet hour in the gardens.</p>
+          <p className="eyebrow">Make a weekend of it</p>
+          <h2 id="guide-title">Around Beverly Hills</h2>
+          <p>Seven places worth leaving the hotel for, from morning coffee to a quiet hour in the gardens.</p>
         </div>
         <div className="guide-list">
           {nearbyGuide.map((place, index) => (
@@ -315,12 +321,12 @@ export default function Home() {
         </div>
         <div>
           <p className="eyebrow">Registry</p>
-          <h2 id="registry-title">Details coming soon.</h2>
+          <h2 id="registry-title">We’ll share it here.</h2>
           <p>
-            We’re still putting the registry together. We’ll add the links here when
-            everything is ready.
+            Registry details have not been finalized. When they are ready, the links
+            will live here.
           </p>
-          <span className="registry-note">Registry links coming soon</span>
+          <span className="registry-note">Nothing to do just yet</span>
         </div>
       </section>
 
@@ -342,18 +348,18 @@ export default function Home() {
 
       <section className="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
         <Image className="rsvp-monogram" src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
-        <p className="eyebrow">We hope you’ll be there</p>
-        <h2 id="rsvp-title">RSVPs will open soon.</h2>
+        <p className="eyebrow">For our favorite people</p>
+        <h2 id="rsvp-title">We hope you’ll join us.</h2>
         <p>
-          When formal invitations go out, you’ll be able to find your party and
-          respond right here.
+          Online RSVPs will open after formal invitations are sent. When they do,
+          you’ll be able to find your party and respond right here.
         </p>
         <a className="button" href="#home">Back to the beginning</a>
       </section>
 
       <footer>
         <p>Madeline <i>&amp;</i> Jack</p>
-        <span>Dawnridge · Beverly Hills</span>
+        <div><span>Dawnridge · Beverly Hills</span><small>See you in Los Angeles</small></div>
       </footer>
     </main>
     </PasswordGate>

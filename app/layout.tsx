@@ -17,17 +17,17 @@ const sans = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://alohalegend.github.io/madeline-jack-wedding/'),
   title: 'Madeline & Jack | Our Wedding',
-  description: 'Celebrate Madeline and Jack at Dawnridge in Beverly Hills.',
+  description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
   openGraph: {
     title: 'Madeline & Jack | Our Wedding',
-    description: 'A celebration at Dawnridge in Beverly Hills.',
+    description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
     type: 'website',
     images: [{ url: 'https://alohalegend.github.io/madeline-jack-wedding/og.png', width: 1536, height: 801, alt: 'Madeline and Jack, a celebration at Dawnridge' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Madeline & Jack | Our Wedding',
-    description: 'A celebration at Dawnridge in Beverly Hills.',
+    description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
     images: ['https://alohalegend.github.io/madeline-jack-wedding/og.png'],
   },
 };

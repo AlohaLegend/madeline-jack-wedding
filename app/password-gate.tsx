@@ -42,9 +42,9 @@ export default function PasswordGate({ children, backgroundImage, monogram }: Pa
       <div className="password-overlay" aria-hidden="true" />
       <section className="password-panel" aria-labelledby="password-title">
         <Image src={monogram} alt="Madeline and Jack monogram" width={1300} height={398} priority />
-        <p className="eyebrow">Welcome to our wedding website</p>
+        <p className="eyebrow">Dawnridge · Beverly Hills</p>
         <h1 id="password-title">Madeline <i>&amp;</i> Jack</h1>
-        <p>Enter the password from your invitation to continue.</p>
+        <p>We made this for the people celebrating with us. Enter the password from your invitation to continue.</p>
         <form onSubmit={submitPassword}>
           <label htmlFor="wedding-password">Wedding website password</label>
           <div className="password-field">

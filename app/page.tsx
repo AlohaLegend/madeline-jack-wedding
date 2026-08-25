@@ -21,6 +21,92 @@ const faqs = [
     question: 'Can I bring a guest or my children?',
     answer: 'Please refer to the names listed on your formal invitation. If you have a question about your party, reach out to Madeline or Jack directly.',
   },
+  {
+    question: 'Should I rent a car?',
+    answer: 'A car is useful if you plan to explore Los Angeles, but it is not necessary for the wedding itself. Rideshare is the simplest option for getting to and from Dawnridge. Please do not plan to drive after the reception.',
+  },
+  {
+    question: 'Will there be parking at Dawnridge?',
+    answer: 'Parking and drop-off instructions will be included with the formal invitation. Because Dawnridge is a private estate in the hills, please follow the arrival instructions rather than navigating to the property on your own.',
+  },
+  {
+    question: 'Which airport should I use?',
+    answer: 'LAX has the widest range of flights. Hollywood Burbank Airport is smaller and can be an easier option when a nonstop flight is available. Travel time from either airport depends heavily on Los Angeles traffic.',
+  },
+  {
+    question: 'Where should I stay?',
+    answer: 'We recommend staying in Beverly Hills. The Beverly Hills Hotel is the closest luxury option to the venue, while The Maybourne, SIXTY, and Avalon put you near restaurants and shops. More details are in the travel section above.',
+  },
+];
+
+const hotels = [
+  {
+    name: 'The Beverly Hills Hotel',
+    label: 'Closest luxury option',
+    address: '9641 Sunset Boulevard',
+    description: 'The most convenient splurge for Dawnridge, with historic rooms, bungalows, the Polo Lounge, and a quiet setting north of Sunset.',
+    href: 'https://www.dorchestercollection.com/los-angeles/the-beverly-hills-hotel',
+  },
+  {
+    name: 'The Maybourne Beverly Hills',
+    label: 'Best walkable location',
+    address: '225 North Canon Drive',
+    description: 'A polished stay beside Beverly Cañon Gardens, one block from Rodeo Drive and an easy walk to central Beverly Hills restaurants.',
+    href: 'https://www.maybourne.com/en/hotels/the-maybourne-beverly-hills',
+  },
+  {
+    name: 'SIXTY Beverly Hills',
+    label: 'Boutique pick',
+    address: '9360 Wilshire Boulevard',
+    description: 'A modern boutique hotel with a rooftop pool and a central location near Beverly Drive, Rodeo Drive, and plenty of places to eat.',
+    href: 'https://www.sixtyhotels.com/destinations/california/sixty-beverly-hills',
+  },
+  {
+    name: 'Avalon Hotel Beverly Hills',
+    label: 'Relaxed alternative',
+    address: '9400 West Olympic Boulevard',
+    description: 'A quieter mid-century hotel centered around a pool. It is a good option for guests who want Beverly Hills without staying in the busiest part of town.',
+    href: 'https://www.avalon-hotel.com/beverly-hills/',
+  },
+];
+
+const nearbyGuide = [
+  {
+    name: 'Chaumont',
+    type: 'Coffee & breakfast',
+    description: 'French pastries, coffee, and a straightforward breakfast stop on South Beverly Drive.',
+    href: 'https://www.chaumontbakery.com/',
+  },
+  {
+    name: 'Spago Beverly Hills',
+    type: 'Dinner',
+    description: 'Wolfgang Puck’s Beverly Hills flagship. Reserve ahead if you want to make a night of it.',
+    href: 'https://wolfgangpuck.com/restaurants/spago-beverly-hills/',
+  },
+  {
+    name: 'Rodeo Drive',
+    type: 'Walk & shop',
+    description: 'An easy walk through the center of Beverly Hills, with shops, architecture, and Beverly Gardens Park nearby.',
+    href: 'https://www.rodeodrive-bh.com/for-your-visit',
+  },
+  {
+    name: 'Greystone Mansion',
+    type: 'Gardens',
+    description: 'Free public grounds at a historic Beverly Hills estate. Check the city site for hours and private-event closures.',
+    href: 'https://beverlyhills.org/441/Visit-Greystone',
+  },
+  {
+    name: 'Virginia Robinson Gardens',
+    type: 'Garden tour',
+    description: 'A historic estate and botanical garden. Tours require advance reservations and walk-ins are not available.',
+    href: 'https://parks.lacounty.gov/virginia-robinson-gardens/',
+  },
+  {
+    name: 'The Fountain Coffee Room',
+    type: 'Classic Beverly Hills',
+    description: 'A small counter inside The Beverly Hills Hotel serving breakfast, lunch, milkshakes, and pie since 1949.',
+    href: 'https://www.dorchestercollection.com/los-angeles/the-beverly-hills-hotel/restaurants-bars/the-fountain-coffee-room',
+  },
 ];
 
 export default function Home() {
@@ -34,8 +120,9 @@ export default function Home() {
         <a className="wordmark" href="#home" aria-label="Madeline and Jack, home">M <span>·</span> J</a>
         <nav aria-label="Primary navigation">
           <a href="#story">Our story</a>
-          <a href="#details">The day</a>
+          <a href="#details">Weekend</a>
           <a href="#travel">Travel</a>
+          <a href="#guide">Guide</a>
           <a href="#registry">Registry</a>
           <a className="nav-rsvp" href="#rsvp">RSVP</a>
         </nav>
@@ -77,30 +164,34 @@ export default function Home() {
 
       <section className="details-section" id="details" aria-labelledby="details-title">
         <div className="section-number">01</div>
-        <p className="eyebrow">The wedding day</p>
-        <h2 id="details-title">The celebration</h2>
+        <p className="eyebrow">Schedule at a glance</p>
+        <h2 id="details-title">The wedding weekend</h2>
         <p className="section-intro">
-          We’ll celebrate at Dawnridge, a private estate in Beverly Hills. The date,
-          timing, and full schedule will be shared here as soon as plans are final.
+          The celebration will take place at Dawnridge in Beverly Hills. We’ll add the
+          date, times, attire, and full event schedule as soon as they are confirmed.
         </p>
-        <div className="detail-grid">
+        <div className="weekend-grid">
           <article>
-            <span>Where</span>
-            <h3>Dawnridge</h3>
-            <p>Beverly Hills<br />California</p>
+            <span>Arrival day</span>
+            <h3>Welcome to Los Angeles</h3>
+            <p>Plan to settle into Beverly Hills before wedding events begin. Any welcome plans will be posted here.</p>
+            <strong>Details to come</strong>
           </article>
           <article>
-            <span>When</span>
-            <h3>Coming soon</h3>
-            <p>Formal invitation<br />to follow</p>
+            <span>Wedding day</span>
+            <h3>Ceremony &amp; reception</h3>
+            <p>Dawnridge<br />Beverly Hills, California</p>
+            <strong>Date and time to come</strong>
           </article>
           <article>
-            <span>The mood</span>
-            <h3>Garden party</h3>
-            <p>Dinner, drinks<br />and plenty of dancing</p>
+            <span>The next morning</span>
+            <h3>One more hello</h3>
+            <p>If a farewell gathering is added, the time and location will appear here.</p>
+            <strong>Details to come</strong>
           </article>
         </div>
-        <a className="text-link" href="#rsvp">RSVP details <span>↘</span></a>
+        <p className="weekend-note">The formal invitation is the final word on guest names, attire, and event timing.</p>
+        <a className="text-link" href="#travel">Plan your stay <span>↘</span></a>
       </section>
 
       <section className="venue-section" aria-labelledby="venue-title">
@@ -133,28 +224,65 @@ export default function Home() {
 
       <section className="travel-section" id="travel" aria-labelledby="travel-title">
         <div className="section-number">02</div>
-        <p className="eyebrow">Plan your stay</p>
-        <h2 id="travel-title">Meet us in Los Angeles.</h2>
+        <p className="eyebrow">Getting here &amp; getting around</p>
+        <h2 id="travel-title">Stay in Beverly Hills.</h2>
         <p className="section-intro">
-          We’ll add hotel recommendations, transportation notes, and a weekend guide
-          once the plans are set. For now, plan around Beverly Hills, California.
+          Beverly Hills is the easiest home base for the weekend. You’ll be close to
+          Dawnridge, restaurants, shops, and the places listed in our nearby guide.
         </p>
-        <div className="travel-grid">
+        <div className="arrival-grid">
           <article>
             <p className="card-number">01</p>
-            <h3>Arriving</h3>
-            <p>Airport and local transportation guidance will be added with the formal details.</p>
+            <h3>Fly into LAX</h3>
+            <p>LAX has the widest range of nonstop flights. Allow extra time for traffic when leaving the airport, especially on weekday afternoons.</p>
+            <a href="https://www.flylax.com/lax-traffic-and-ground-transportation" target="_blank" rel="noreferrer">Ground transportation <span>↗</span></a>
           </article>
           <article>
             <p className="card-number">02</p>
-            <h3>Staying</h3>
-            <p>Our recommended hotels and any room-block information will appear here.</p>
+            <h3>Try Burbank</h3>
+            <p>Hollywood Burbank Airport is smaller and easier to navigate. It is worth checking when a convenient nonstop flight is available.</p>
+            <a href="https://www.hollywoodburbankairport.com/ground-transportation/shuttles-taxis/" target="_blank" rel="noreferrer">Airport information <span>↗</span></a>
           </article>
           <article>
             <p className="card-number">03</p>
-            <h3>Exploring</h3>
-            <p>We’ll share a short list of the places we love for coffee, dinner, and a day out.</p>
+            <h3>Use rideshare</h3>
+            <p>Uber, Lyft, or a hired car will be easiest for wedding events. A rental car is useful only if you plan to explore beyond Beverly Hills.</p>
+            <span className="travel-fine-print">Exact arrival instructions will come with the invitation.</span>
           </article>
+        </div>
+        <div className="hotel-heading">
+          <p className="eyebrow">Where to stay</p>
+          <h3>Four good options.</h3>
+          <p>Rates change by date, so compare the hotel’s direct rate before booking. Any room-block information will be added here.</p>
+        </div>
+        <div className="hotel-grid">
+          {hotels.map((hotel, index) => (
+            <article key={hotel.name}>
+              <div className="hotel-topline"><span>{String(index + 1).padStart(2, '0')}</span><span>{hotel.label}</span></div>
+              <h4>{hotel.name}</h4>
+              <p className="hotel-address">{hotel.address}</p>
+              <p>{hotel.description}</p>
+              <a href={hotel.href} target="_blank" rel="noreferrer">View hotel <span>↗</span></a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="guide-section" id="guide" aria-labelledby="guide-title">
+        <div className="guide-heading">
+          <div className="section-number">03</div>
+          <p className="eyebrow">If you have a little time</p>
+          <h2 id="guide-title">Nearby guide</h2>
+          <p>A short list for coffee, dinner, a walk, or a quiet hour in the gardens.</p>
+        </div>
+        <div className="guide-list">
+          {nearbyGuide.map((place, index) => (
+            <a href={place.href} target="_blank" rel="noreferrer" key={place.name}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <div><small>{place.type}</small><h3>{place.name}</h3><p>{place.description}</p></div>
+              <b aria-hidden="true">↗</b>
+            </a>
+          ))}
         </div>
       </section>
 

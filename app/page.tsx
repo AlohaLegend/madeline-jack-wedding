@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <PasswordGate
       backgroundImage={asset('/images/dawnridge-entry-hq.webp')}
-      monogram={asset('/images/monogram.png')}
+      monogram={asset('/images/monogram-centered.png')}
     >
     <main>
       <header className="site-header">
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="hero-image" aria-hidden="true" style={{ backgroundImage: `url('${asset('/images/dawnridge-entry-hq.webp')}')` }} />
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-card">
-          <Image className="hero-monogram" src={asset('/images/monogram.png')} alt="Madeline and Jack monogram" width={1300} height={398} priority />
+          <Image className="hero-monogram" src={asset('/images/monogram-centered.png')} alt="Madeline and Jack monogram" width={1300} height={398} priority />
           <h1 id="hero-title" className="sr-only">Madeline and Jack are getting married</h1>
           <p>Are getting married</p>
         </div>
@@ -161,7 +161,7 @@ export default function Home() {
 
       <section className="registry-section" id="registry" aria-labelledby="registry-title">
         <div className="registry-art" aria-hidden="true">
-          <Image src={asset('/images/monogram.png')} alt="" width={1300} height={398} />
+          <Image src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
         </div>
         <div>
           <p className="eyebrow">With love and gratitude</p>
@@ -191,7 +191,7 @@ export default function Home() {
       </section>
 
       <section className="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
-        <Image className="rsvp-monogram" src={asset('/images/monogram.png')} alt="" width={1300} height={398} />
+        <Image className="rsvp-monogram" src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
         <p className="eyebrow">We hope you’ll be there</p>
         <h2 id="rsvp-title">RSVPs will open soon.</h2>
         <p>

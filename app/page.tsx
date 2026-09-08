@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import PasswordGate from './password-gate';
 
-const asset = (path: string) =>
-  `${process.env.GITHUB_PAGES === 'true' ? '/madeline-jack-wedding' : ''}${path}`;
+const asset = (path: string) => path;
 
 const faqs = [
   {

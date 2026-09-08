@@ -8,6 +8,8 @@
   --deep: #35493b;
   --line: rgba(38, 48, 39, 0.24);
   --editorial-width: 1440px;
+  --section-space: clamp(82px,9vw,140px);
+  --section-space-roomy: clamp(92px,10vw,155px);
 }
 
 * { box-sizing: border-box; }
@@ -41,7 +43,7 @@ section[id] { scroll-margin-top: 78px; }
 .scroll-cue { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); color: var(--cream); text-transform: uppercase; letter-spacing: .18em; font-size: 9px; writing-mode: vertical-rl; }
 .scroll-cue::after { content: ''; display: inline-block; height: 30px; margin-top: 10px; border-left: 1px solid currentColor; }
 
-.story-section { min-height: 100svh; padding: clamp(92px,11vw,160px) 6vw 100px; text-align: center; border-top: 1px solid rgba(242,236,223,.36); }
+.story-section { min-height: 100svh; padding: var(--section-space-roomy) 6vw var(--section-space); text-align: center; border-top: 1px solid rgba(242,236,223,.36); }
 .story-heading { display: grid; grid-template-columns: 1fr minmax(220px,330px) 1fr; gap: clamp(30px,6vw,95px); align-items: center; max-width: 1040px; margin: 0 auto; }
 .story-heading > p { font-family: var(--font-serif), Georgia, serif; font-size: clamp(18px,2.2vw,31px); line-height: .95; letter-spacing: -.02em; }
 .story-heading figure { margin: 0; transform: rotate(-1.2deg); filter: sepia(.12) saturate(.72); }
@@ -62,7 +64,7 @@ section[id] { scroll-margin-top: 78px; }
 .photo-break::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,32,27,.28), transparent 65%); }
 .photo-break p { position: absolute; z-index: 1; left: 6vw; bottom: 7vw; max-width: 650px; margin: 0; color: var(--cream); font-family: var(--font-serif), Georgia, serif; font-size: clamp(36px,5vw,76px); font-style: italic; line-height: 1; letter-spacing: -.03em; }
 
-.details-section { padding: clamp(100px,11vw,170px) 6vw; background: var(--deep); color: var(--cream); text-align: center; }
+.details-section { padding: var(--section-space) 6vw; background: var(--deep); color: var(--cream); text-align: center; }
 .details-section h2 { margin-top: 0; }
 .weekend-grid { display: grid; grid-template-columns: repeat(3,1fr); max-width: 1180px; margin: 85px auto 34px; border-top: 1px solid rgba(242,236,223,.42); border-bottom: 1px solid rgba(242,236,223,.42); }
 .weekend-grid article { display: flex; flex-direction: column; min-height: 370px; padding: 52px clamp(28px,3.2vw,48px); text-align: left; }
@@ -78,12 +80,12 @@ section[id] { scroll-margin-top: 78px; }
 .venue-section { display: grid; grid-template-columns: 1.15fr .85fr; min-height: 100svh; background: var(--cream); }
 .venue-image { position: relative; min-height: 780px; }
 .venue-image img, .mini-image img, .gallery-grid img { object-fit: cover; }
-.venue-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(70px,8vw,140px) clamp(38px,7vw,110px); }
+.venue-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(62px,7vw,116px) clamp(38px,7vw,110px); }
 .venue-copy h2, .gallery-section h2, .faq-section h2 { margin: 0 0 30px; font-family: var(--font-serif), Georgia, serif; font-size: clamp(48px,6vw,92px); font-weight: 400; line-height: .88; letter-spacing: -.05em; }
 .venue-copy > p:not(.eyebrow) { font-size: 13px; line-height: 1.85; }
 .mini-image { position: relative; width: min(100%,310px); aspect-ratio: 1/1; margin: 55px 0 0 auto; }
 
-.gallery-section { padding: clamp(100px,12vw,180px) 5vw; background: var(--paper); text-align: center; }
+.gallery-section { padding: var(--section-space-roomy) 5vw var(--section-space); background: var(--paper); text-align: center; }
 .gallery-section h2 { margin-bottom: 80px; }
 .gallery-grid { display: grid; grid-template-columns: repeat(12,1fr); grid-template-rows: repeat(12,52px); max-width: 1300px; margin: 0 auto; }
 .gallery-grid figure { position: relative; margin: 0; overflow: hidden; box-shadow: 0 18px 40px rgba(38,48,39,.08); }
@@ -92,7 +94,7 @@ section[id] { scroll-margin-top: 78px; }
 .gallery-three { z-index: 3; grid-column: 7/11; grid-row: 7/13; transform: rotate(2.2deg); }
 .gallery-four { grid-column: 1/7; grid-row: 8/12; transform: rotate(-.8deg); }
 
-.travel-section { padding: clamp(100px,11vw,170px) 6vw; background: var(--sage); color: var(--cream); text-align: center; }
+.travel-section { padding: var(--section-space) 6vw; background: var(--sage); color: var(--cream); text-align: center; }
 .travel-section h2 { max-width: 1000px; margin: 0 auto 28px; }
 .arrival-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; max-width: 1180px; margin: 90px auto 0; background: rgba(242,236,223,.36); border: 1px solid rgba(242,236,223,.36); }
 .arrival-grid article { display: flex; flex-direction: column; min-height: 380px; padding: 42px; background: var(--sage); text-align: left; }
@@ -116,7 +118,7 @@ section[id] { scroll-margin-top: 78px; }
 .hotel-grid article > p:not(.hotel-address) { max-width: 490px; margin: 0 0 35px; font-size: 11px; line-height: 1.8; }
 .hotel-grid article > a { display: inline-flex; gap: 12px; padding-bottom: 7px; border-bottom: 1px solid currentColor; text-transform: uppercase; letter-spacing: .16em; font-size: 9px; }
 
-.guide-section { display: grid; grid-template-columns: minmax(300px,.72fr) minmax(0,1.28fr); gap: clamp(50px,7vw,118px); padding-block: clamp(105px,12vw,185px); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
+.guide-section { display: grid; grid-template-columns: minmax(300px,.72fr) minmax(0,1.28fr); gap: clamp(50px,7vw,118px); padding-block: var(--section-space-roomy); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
 .guide-heading { align-self: start; position: sticky; top: 125px; }
 .guide-heading, .guide-list { min-width: 0; }
 .guide-heading .section-number { margin-left: 0; }
@@ -132,14 +134,14 @@ section[id] { scroll-margin-top: 78px; }
 .guide-list b { padding-top: 4px; font-size: 16px; font-weight: 400; }
 
 .registry-section { display: grid; grid-template-columns: .8fr 1.2fr; min-height: 78svh; background: var(--paper); }
-.registry-section > div { display: flex; flex-direction: column; justify-content: center; padding: clamp(80px,10vw,150px) clamp(38px,8vw,130px); }
+.registry-section > div { display: flex; flex-direction: column; justify-content: center; padding: clamp(68px,8vw,122px) clamp(38px,8vw,130px); }
 .registry-art { align-items: center; background: var(--cream); border-right: 1px solid var(--line); }
 .registry-art img { width: min(520px,100%); opacity: .22; }
 .registry-section h2 { max-width: 720px; margin: 0 0 34px; font-family: var(--font-serif), Georgia, serif; font-size: clamp(52px,7vw,106px); font-weight: 400; line-height: .88; letter-spacing: -.05em; }
 .registry-section > div:last-child > p:not(.eyebrow) { max-width: 580px; margin: 0; font-size: 13px; line-height: 1.85; }
 .registry-note { width: fit-content; margin-top: 48px; padding-bottom: 8px; border-bottom: 1px solid currentColor; text-transform: uppercase; letter-spacing: .16em; font-size: 9px; }
 
-.faq-section { display: grid; grid-template-columns: minmax(300px,.8fr) minmax(0,1.2fr); gap: clamp(50px,8vw,130px); padding-block: clamp(100px,11vw,170px); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
+.faq-section { display: grid; grid-template-columns: minmax(300px,.8fr) minmax(0,1.2fr); gap: clamp(50px,8vw,130px); padding-block: var(--section-space); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
 .faq-section > div { min-width: 0; }
 .faq-section > div:first-child img { display: block; width: min(270px,75%); margin: 65px 0 0 auto; filter: saturate(.72); }
 .faq-list { align-self: center; border-top: 1px solid var(--line); }
@@ -152,7 +154,7 @@ section[id] { scroll-margin-top: 78px; }
 .faq-list summary span { font-family: var(--font-sans), Arial, sans-serif; font-size: 9px; letter-spacing: .18em; }
 .faq-list details > p { max-width: 620px; margin: -5px 45px 30px 55px; font-size: 12px; line-height: 1.8; }
 
-.rsvp-section { position: relative; padding: clamp(130px,15vw,220px) 24px; background: var(--paper); text-align: center; }
+.rsvp-section { position: relative; padding: clamp(108px,12vw,178px) 24px; background: var(--paper); text-align: center; }
 .rsvp-monogram { width: min(850px,80vw); margin: 0 auto 65px; opacity: .11; }
 .rsvp-section h2 { margin: 0 0 30px; }
 .rsvp-section > p:not(.eyebrow) { max-width: 620px; margin: 0 auto; font-size: 13px; line-height: 1.85; }

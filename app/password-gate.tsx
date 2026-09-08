@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FormEvent, ReactNode, useEffect, useState } from 'react';
 
 const ACCESS_KEY = 'mj-wedding-access-v1';
-const WEDDING_PASSWORD = 'dawnridge';
+const WEDDING_PASSWORDS = new Set(['dawnridge', 'juno']);
 
 type PasswordGateProps = {
   children: ReactNode;
@@ -25,7 +25,7 @@ export default function PasswordGate({ children, backgroundImage, monogram }: Pa
 
   function submitPassword(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (password.trim().toLowerCase() === WEDDING_PASSWORD) {
+    if (WEDDING_PASSWORDS.has(password.trim().toLowerCase())) {
       window.localStorage.setItem(ACCESS_KEY, 'granted');
       setUnlocked(true);
       setError('');

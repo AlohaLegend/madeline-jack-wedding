@@ -7,6 +7,7 @@
   --sage: #718773;
   --deep: #35493b;
   --line: rgba(38, 48, 39, 0.24);
+  --editorial-width: 1440px;
 }
 
 * { box-sizing: border-box; }
@@ -115,8 +116,9 @@ section[id] { scroll-margin-top: 78px; }
 .hotel-grid article > p:not(.hotel-address) { max-width: 490px; margin: 0 0 35px; font-size: 11px; line-height: 1.8; }
 .hotel-grid article > a { display: inline-flex; gap: 12px; padding-bottom: 7px; border-bottom: 1px solid currentColor; text-transform: uppercase; letter-spacing: .16em; font-size: 9px; }
 
-.guide-section { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(50px,8vw,135px); padding: clamp(105px,12vw,185px) 7vw; background: var(--cream); }
+.guide-section { display: grid; grid-template-columns: minmax(300px,.72fr) minmax(0,1.28fr); gap: clamp(50px,7vw,118px); padding-block: clamp(105px,12vw,185px); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
 .guide-heading { align-self: start; position: sticky; top: 125px; }
+.guide-heading, .guide-list { min-width: 0; }
 .guide-heading .section-number { margin-left: 0; }
 .guide-heading h2 { margin: 0 0 30px; font-family: var(--font-serif), Georgia, serif; font-size: clamp(58px,7vw,108px); font-weight: 400; line-height: .86; letter-spacing: -.05em; }
 .guide-heading > p:last-child { max-width: 420px; margin: 0; font-size: 12px; line-height: 1.8; }
@@ -137,7 +139,8 @@ section[id] { scroll-margin-top: 78px; }
 .registry-section > div:last-child > p:not(.eyebrow) { max-width: 580px; margin: 0; font-size: 13px; line-height: 1.85; }
 .registry-note { width: fit-content; margin-top: 48px; padding-bottom: 8px; border-bottom: 1px solid currentColor; text-transform: uppercase; letter-spacing: .16em; font-size: 9px; }
 
-.faq-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(50px,9vw,150px); padding: clamp(100px,11vw,170px) 7vw; background: var(--cream); }
+.faq-section { display: grid; grid-template-columns: minmax(300px,.8fr) minmax(0,1.2fr); gap: clamp(50px,8vw,130px); padding-block: clamp(100px,11vw,170px); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
+.faq-section > div { min-width: 0; }
 .faq-section > div:first-child img { display: block; width: min(270px,75%); margin: 65px 0 0 auto; filter: saturate(.72); }
 .faq-list { align-self: center; border-top: 1px solid var(--line); }
 .faq-list details { border-bottom: 1px solid var(--line); }
@@ -182,7 +185,7 @@ footer small { opacity: .65; }
 .password-error { min-height: 20px; margin: 13px 0 -20px; color: #f1d3c5; font-size: 10px; line-height: 1.5; }
 .password-footer { position: absolute; z-index: 1; left: 50%; bottom: 34px; transform: translateX(-50%); margin: 0; text-transform: uppercase; letter-spacing: .18em; font-size: 8px; white-space: nowrap; }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .site-header { min-height: 62px; padding: 0 22px; }
   .site-header nav a:not(.nav-rsvp) { display: none; }
   .hero::after { inset: 12px; }

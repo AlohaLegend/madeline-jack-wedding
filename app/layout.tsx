@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     title: 'Madeline & Jack | Our Wedding',
     description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
     type: 'website',
-    images: [{ url: 'https://thekleinicks.com/og.png', width: 1536, height: 801, alt: 'Madeline and Jack, a celebration at Dawnridge' }],
+    images: [{ url: 'https://thekleinicks.com/og-homepage.png', width: 1200, height: 630, alt: 'MJ monogram and floral linework over the Dawnridge entrance' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Madeline & Jack | Our Wedding',
     description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
-    images: ['https://thekleinicks.com/og.png'],
+    images: ['https://thekleinicks.com/og-homepage.png'],
   },
 };
 

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FormEvent, ReactNode, useEffect, useState } from 'react';
 
 const ACCESS_KEY = 'mj-wedding-access-v1';
-const WEDDING_PASSWORDS = new Set(['dawnridge', 'juno']);
+const PASSWORD_ENDPOINT = 'https://madeline-jack-wedding-auth.bammediaauth.workers.dev/verify';
 
 type PasswordGateProps = {
   children: ReactNode;
@@ -17,21 +17,43 @@ export default function PasswordGate({ children, backgroundImage, monogram }: Pa
   const [ready, setReady] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [checking, setChecking] = useState(false);
 
   useEffect(() => {
-    setUnlocked(window.localStorage.getItem(ACCESS_KEY) === 'granted');
-    setReady(true);
+    const frame = window.requestAnimationFrame(() => {
+      setUnlocked(window.localStorage.getItem(ACCESS_KEY) === 'granted');
+      setReady(true);
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
-  function submitPassword(event: FormEvent<HTMLFormElement>) {
+  async function submitPassword(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (WEDDING_PASSWORDS.has(password.trim().toLowerCase())) {
-      window.localStorage.setItem(ACCESS_KEY, 'granted');
-      setUnlocked(true);
-      setError('');
+    setChecking(true);
+    setError('');
+
+    try {
+      const response = await fetch(PASSWORD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      const result = await response.json() as { ok?: boolean };
+
+      if (response.ok && result.ok) {
+        window.localStorage.setItem(ACCESS_KEY, 'granted');
+        setUnlocked(true);
+        setPassword('');
+        return;
+      }
+    } catch {
+      setError('We couldn’t check the password. Please try again in a moment.');
+      setChecking(false);
       return;
     }
+
     setError('That password doesn’t look quite right. Please try again.');
+    setChecking(false);
   }
 
   if (ready && unlocked) return children;
@@ -57,8 +79,9 @@ export default function PasswordGate({ children, backgroundImage, monogram }: Pa
               placeholder="Password"
               aria-describedby={error ? 'password-error' : undefined}
               autoFocus
+              disabled={checking}
             />
-            <button type="submit">Enter</button>
+            <button type="submit" disabled={checking}>{checking ? 'Checking…' : 'Enter'}</button>
           </div>
           <p className="password-error" id="password-error" aria-live="polite">{error}</p>
         </form>

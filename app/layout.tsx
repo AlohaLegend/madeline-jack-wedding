@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://thekleinicks.com/'),
   title: 'Madeline & Jack | Our Wedding',
   description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+  },
   openGraph: {
     title: 'Madeline & Jack | Our Wedding',
     description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',

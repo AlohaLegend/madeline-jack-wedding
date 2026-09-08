@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "madeline-jack-wedding-auth",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-08",
+  "workers_dev": true,
+  "ratelimits": [
+    {
+      "name": "PASSWORD_RATE_LIMITER",
+      "namespace_id": "884302",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ]
+}

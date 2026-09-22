@@ -66,7 +66,7 @@ section[id] { scroll-margin-top: 78px; }
 
 .details-section { padding: var(--section-space) 6vw; background: var(--deep); color: var(--cream); text-align: center; }
 .details-section h2 { margin-top: 0; }
-.weekend-grid { display: grid; grid-template-columns: repeat(3,1fr); max-width: 1180px; margin: 85px auto 34px; border-top: 1px solid rgba(242,236,223,.42); border-bottom: 1px solid rgba(242,236,223,.42); }
+.weekend-grid { display: grid; grid-template-columns: repeat(2,1fr); max-width: 960px; margin: 85px auto 34px; border-top: 1px solid rgba(242,236,223,.42); border-bottom: 1px solid rgba(242,236,223,.42); }
 .weekend-grid article { display: flex; flex-direction: column; min-height: 370px; padding: 52px clamp(28px,3.2vw,48px); text-align: left; }
 .weekend-grid article + article { border-left: 1px solid rgba(242,236,223,.42); }
 .weekend-grid span, .weekend-grid strong { text-transform: uppercase; letter-spacing: .2em; font-size: 9px; font-weight: 500; }

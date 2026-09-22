@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: 'Where should I stay?',
-    answer: 'We recommend staying in or just outside Beverly Hills. The Beverly Hills Hotel is the closest luxury option, The Maybourne is the most walkable, Hotel 850 SVB is the small design-led pick, and Avalon is the most relaxed. More details are in the travel section above.',
+    answer: 'We recommend staying in or just outside Beverly Hills. The Peninsula is the classic luxury option, The Maybourne is the most walkable, Hotel 850 SVB is the small design-led pick, and Avalon is the most relaxed. More details are in the travel section above.',
   },
 ];
 
@@ -45,12 +45,12 @@ const loveStoryParagraphs = [
 
 const hotels = [
   {
-    name: 'The Beverly Hills Hotel',
-    label: 'Closest luxury option',
+    name: 'The Peninsula Beverly Hills',
+    label: 'Classic luxury stay',
     price: '$$$$',
-    address: '9641 Sunset Boulevard',
-    description: 'The most convenient splurge for Dawnridge, with historic rooms, bungalows, the Polo Lounge, and a quiet setting north of Sunset.',
-    href: 'https://www.dorchestercollection.com/los-angeles/the-beverly-hills-hotel',
+    address: '9882 South Santa Monica Boulevard',
+    description: 'A polished, full-service Beverly Hills stay with a rooftop pool, spa, afternoon tea, and complimentary house-car service within Beverly Hills and Century City.',
+    href: 'https://www.peninsula.com/en/beverly-hills/5-star-luxury-hotel-beverly-hills',
   },
   {
     name: 'The Maybourne Beverly Hills',
@@ -196,7 +196,7 @@ export default function Home() {
           <article>
             <span>Arrival day</span>
             <h3>Settle into Beverly Hills</h3>
-            <p>Give yourself time to arrive, check in, and get comfortable before the celebration begins. Any welcome plans will be posted here.</p>
+            <p>Give yourself time to arrive, check in, and get comfortable before the celebration begins.</p>
             <strong>Welcome plans will follow</strong>
           </article>
           <article>
@@ -204,12 +204,6 @@ export default function Home() {
             <h3>Ceremony &amp; reception</h3>
             <p>Dawnridge<br />Beverly Hills, California</p>
             <strong>Timing will follow</strong>
-          </article>
-          <article>
-            <span>The next morning</span>
-            <h3>One more hello</h3>
-            <p>If a farewell gathering is added, the time and location will appear here.</p>
-            <strong>Any plans will appear here</strong>
           </article>
         </div>
         <p className="weekend-note">The formal invitation is the final word on guest names, attire, and event timing.</p>
@@ -224,8 +218,13 @@ export default function Home() {
           <p className="eyebrow">The setting</p>
           <h2 id="venue-title">Tucked into the hills.</h2>
           <p>
-            Dawnridge is a private estate filled with hand-painted rooms, lush gardens,
-            and details collected over many years. We’re excited to share it with you.
+            Jack and I cannot believe we get to share the evening with you at our dream
+            venue! Dawnridge is the former home of set &amp; costume designer Tony Duquette.
+            Built in 1949, the estate carries the spirit of his Hollywood era through ornate,
+            hand-painted rooms, tangled gardens, and art Duquette collected and created over
+            his lifetime. May the setting inspire a night of fabulous celebration and your
+            most dramatic dance moves. We hope you’ll wander and explore every part of the
+            home (with champagne in hand!).
           </p>
           <div className="mini-image">
             <Image src={asset('/images/dawnridge-interior.webp')} alt="Richly decorated room at Dawnridge" fill sizes="(max-width: 800px) 70vw, 25vw" loading="eager" />
@@ -275,7 +274,7 @@ export default function Home() {
         <div className="hotel-heading">
           <p className="eyebrow">Where to stay</p>
           <h3>Four places to compare.</h3>
-          <p>The symbols are a relative guide, not quoted nightly rates. Compare direct prices before booking. Any room-block information will be added here.</p>
+          <p>The symbols are a relative guide, not quoted nightly rates. Compare direct prices before booking.</p>
         </div>
         <div className="hotel-grid">
           {hotels.map((hotel, index) => (

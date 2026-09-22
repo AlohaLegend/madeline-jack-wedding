@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </div>
         <div className="personal-details" aria-label="A few things about Madeline and Jack">
-          <p><span>Most likely found</span>Near the beach</p>
+          <p><span>Most likely found</span>At their neighborhood spot</p>
           <p><span>Usually accompanied by</span>One very loved dog</p>
           <p><span>Looking forward to</span>Everyone together at Dawnridge</p>
         </div>

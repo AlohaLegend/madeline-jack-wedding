@@ -2,6 +2,7 @@ import Image from 'next/image';
 import PasswordGate from './password-gate';
 
 const asset = (path: string) => path;
+const showRegistry = false;
 
 const faqs = [
   {
@@ -119,7 +120,7 @@ const nearbyGuide = [
     name: 'Beverly Hills Farmers’ Market',
     type: 'Sunday morning',
     description: 'A certified neighborhood market held every Sunday from 8 AM to 1 PM, with produce, bread, prepared food, and free two-hour parking.',
-    href: 'https://www.beverlyhills.gov/488/Farmers-Market',
+    href: 'https://beverlyhills.org/488/Farmers-Market',
   },
 ];
 
@@ -135,9 +136,10 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#story">Our story</a>
           <a href="#details">Weekend</a>
+          <a href="#venue">Dawnridge</a>
           <a href="#travel">Travel</a>
           <a href="#guide">Guide</a>
-          <a href="#registry">Registry</a>
+          <a href="#faq">FAQ</a>
           <a className="nav-rsvp" href="#rsvp">RSVP</a>
         </nav>
       </header>
@@ -185,7 +187,7 @@ export default function Home() {
 
       <section className="details-section" id="details" aria-labelledby="details-title">
         <div className="section-number">01</div>
-        <p className="eyebrow">The plan, as it takes shape</p>
+        <p className="eyebrow">A weekend in Beverly Hills</p>
         <h2 id="details-title">The wedding weekend</h2>
         <p className="section-intro">
           The celebration will take place at Dawnridge in Beverly Hills. The formal
@@ -197,7 +199,7 @@ export default function Home() {
             <span>Arrival day</span>
             <h3>Settle into Beverly Hills</h3>
             <p>Give yourself time to arrive, check in, and get comfortable before the celebration begins.</p>
-            <strong>Welcome plans will follow</strong>
+            <strong>Details for out-of-town guests will follow</strong>
           </article>
           <article>
             <span>Wedding day</span>
@@ -210,7 +212,7 @@ export default function Home() {
         <a className="text-link" href="#travel">Plan your stay <span>↘</span></a>
       </section>
 
-      <section className="venue-section" aria-labelledby="venue-title">
+      <section className="venue-section" id="venue" aria-labelledby="venue-title">
         <div className="venue-image tall-image">
           <Image src={asset('/images/dawnridge-ceiling.webp')} alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" loading="eager" />
         </div>
@@ -273,8 +275,8 @@ export default function Home() {
         </div>
         <div className="hotel-heading">
           <p className="eyebrow">Where to stay</p>
-          <h3>Four places to compare.</h3>
-          <p>The symbols are a relative guide, not quoted nightly rates. Compare direct prices before booking.</p>
+          <h3>A few places we like.</h3>
+          <p>Price symbols are a general guide. Compare direct rates before booking.</p>
         </div>
         <div className="hotel-grid">
           {hotels.map((hotel, index) => (
@@ -313,20 +315,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="registry-section" id="registry" aria-labelledby="registry-title">
-        <div className="registry-art" aria-hidden="true">
-          <Image src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
-        </div>
-        <div>
-          <p className="eyebrow">Registry</p>
-          <h2 id="registry-title">We’ll share it here.</h2>
-          <p>
-            Registry details have not been finalized. When they are ready, the links
-            will live here.
-          </p>
-          <span className="registry-note">Nothing to do just yet</span>
-        </div>
-      </section>
+      {showRegistry && (
+        <section className="registry-section" id="registry" aria-labelledby="registry-title">
+          <div className="registry-art" aria-hidden="true">
+            <Image src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
+          </div>
+          <div>
+            <p className="eyebrow">Registry</p>
+            <h2 id="registry-title">We’ll share it here.</h2>
+            <p>Registry details and links will live here when they are ready.</p>
+          </div>
+        </section>
+      )}
 
       <section className="faq-section" id="faq" aria-labelledby="faq-title">
         <div>

@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'What should I wear?',
-    answer: 'We’ll share the dress code with the full wedding details. The celebration will include time in the garden.',
+    answer: 'Dress code will be provided with the formal invitation. Check back here for an inspiration board.',
   },
   {
     question: 'Can I bring a guest or my children?',
@@ -27,7 +27,11 @@ const faqs = [
   },
   {
     question: 'Will there be parking at Dawnridge?',
-    answer: 'Parking and drop-off instructions will be included with the formal invitation. Because Dawnridge is a private estate in the hills, please follow the arrival instructions rather than navigating to the property on your own.',
+    answer: 'Rideshare is encouraged, as parking is limited. Details will be posted closer to the date.',
+  },
+  {
+    question: 'What should I know about accessibility?',
+    answer: 'The venue features multiple levels and stairs, and the evening will take place both indoors and outdoors. We recommend wearing low heels or comfortable shoes to navigate the space. If you have any accessibility concerns or questions about the venue layout, please let us know in advance so we can help make your evening as comfortable as possible.',
   },
   {
     question: 'Which airport should I use?',
@@ -132,7 +136,7 @@ export default function Home() {
     >
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Madeline and Jack, home">M <span>·</span> J</a>
+        <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">M <span>·</span> J</a>
         <nav aria-label="Primary navigation">
           <a href="#story">Our story</a>
           <a href="#details">Weekend</a>
@@ -148,11 +152,12 @@ export default function Home() {
         <div className="hero-image" aria-hidden="true" style={{ backgroundImage: `url('${asset('/images/dawnridge-entry-hq.webp')}')` }} />
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-card">
-          <Image className="hero-monogram" src={asset('/images/monogram-centered.png')} alt="Madeline and Jack monogram" width={1300} height={398} priority />
-          <h1 id="hero-title" className="sr-only">Madeline and Jack are getting married</h1>
+          <Image className="hero-monogram" src={asset('/images/monogram-centered.png')} alt="Madeline Borehan and Jack Kleinick monogram" width={1300} height={398} priority />
+          <h1 id="hero-title" className="sr-only">Madeline Borehan and Jack Kleinick are getting married</h1>
           <p>Are getting married</p>
+          <p className="hero-date">April 10, 2026</p>
         </div>
-        <p className="hero-note hero-note-left">Madeline &amp; Jack</p>
+        <p className="hero-note hero-note-left">Madeline Borehan &amp; Jack Kleinick</p>
         <p className="hero-note hero-note-right">Dawnridge · Beverly Hills</p>
         <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
       </section>
@@ -190,8 +195,8 @@ export default function Home() {
         <p className="eyebrow">A weekend in Beverly Hills</p>
         <h2 id="details-title">The wedding weekend</h2>
         <p className="section-intro">
-          The celebration will take place at Dawnridge in Beverly Hills. The formal
-          invitation will carry the date and timing, and this page will become the full
+          The celebration will take place on April 10, 2026, at Dawnridge in Beverly Hills.
+          The formal invitation will carry the timing, and this page will become the full
           weekend guide as plans are finalized.
         </p>
         <div className="weekend-grid">
@@ -205,7 +210,7 @@ export default function Home() {
             <span>Wedding day</span>
             <h3>Ceremony &amp; reception</h3>
             <p>Dawnridge<br />Beverly Hills, California</p>
-            <strong>Timing will follow</strong>
+            <strong>Timing will be on the formal invitation</strong>
           </article>
         </div>
         <p className="weekend-note">The formal invitation is the final word on guest names, attire, and event timing.</p>

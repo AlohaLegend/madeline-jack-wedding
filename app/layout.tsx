@@ -16,8 +16,8 @@ const sans = Montserrat({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://thekleinicks.com/'),
-  title: 'Madeline & Jack | Our Wedding',
-  description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
+  title: 'Madeline Borehan & Jack Kleinick | April 10, 2026',
+  description: 'Madeline Borehan and Jack Kleinick are getting married at Dawnridge in Beverly Hills on April 10, 2026. Find weekend plans, travel notes, and their guide to the area.',
   robots: {
     index: false,
     follow: false,
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     apple: [{ url: '/apple-touch-icon.png?v=2', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
-    title: 'Madeline & Jack | Our Wedding',
-    description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
+    title: 'Madeline Borehan & Jack Kleinick | April 10, 2026',
+    description: 'Madeline Borehan and Jack Kleinick are getting married at Dawnridge in Beverly Hills on April 10, 2026. Find weekend plans, travel notes, and their guide to the area.',
     type: 'website',
     images: [{ url: 'https://thekleinicks.com/og-homepage.png', width: 1200, height: 630, alt: 'MJ monogram and floral linework over the Dawnridge entrance' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Madeline & Jack | Our Wedding',
-    description: 'Madeline and Jack are getting married at Dawnridge in Beverly Hills. Find weekend plans, travel notes, and their guide to the area.',
+    title: 'Madeline Borehan & Jack Kleinick | April 10, 2026',
+    description: 'Madeline Borehan and Jack Kleinick are getting married at Dawnridge in Beverly Hills on April 10, 2026. Find weekend plans, travel notes, and their guide to the area.',
     images: ['https://thekleinicks.com/og-homepage.png'],
   },
 };

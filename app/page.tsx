@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import PasswordGate from './password-gate';
 
 const asset = (path: string) => path;
 const showRegistry = false;
@@ -131,10 +130,6 @@ const nearbyGuide = [
 
 export default function Home() {
   return (
-    <PasswordGate
-      backgroundImage={asset('/images/dawnridge-entry-hq.webp')}
-      monogram={asset('/images/monogram-centered.png')}
-    >
     <main>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">M <span>·</span> J</a>
@@ -366,6 +361,5 @@ export default function Home() {
         <div><span>Dawnridge · Beverly Hills</span><small>See you in Los Angeles</small></div>
       </footer>
     </main>
-    </PasswordGate>
   );
 }

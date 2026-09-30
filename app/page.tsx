@@ -210,7 +210,7 @@ export default function Home() {
           </article>
         </div>
         <p className="weekend-note">The formal invitation is the final word on guest names, attire, and event timing.</p>
-        <a className="text-link" href="#travel">Plan your stay <span>↘</span></a>
+        <a className="text-link" href="#travel">Plan your stay <span>&#x2198;&#xFE0E;</span></a>
       </section>
 
       <section className="venue-section" id="venue" aria-labelledby="venue-title">
@@ -259,13 +259,13 @@ export default function Home() {
             <p className="card-number">01</p>
             <h3>Fly into LAX</h3>
             <p>LAX has the widest range of nonstop flights. Allow extra time for traffic when leaving the airport, especially on weekday afternoons.</p>
-            <a href="https://www.flylax.com/lax-traffic-and-ground-transportation" target="_blank" rel="noreferrer">Ground transportation <span>↗</span></a>
+            <a href="https://www.flylax.com/lax-traffic-and-ground-transportation" target="_blank" rel="noreferrer">Ground transportation <span>&#x2197;&#xFE0E;</span></a>
           </article>
           <article>
             <p className="card-number">02</p>
             <h3>Try Burbank</h3>
             <p>Hollywood Burbank Airport is smaller and easier to navigate. It is worth checking when a convenient nonstop flight is available.</p>
-            <a href="https://www.hollywoodburbankairport.com/ground-transportation/shuttles-taxis/" target="_blank" rel="noreferrer">Airport information <span>↗</span></a>
+            <a href="https://www.hollywoodburbankairport.com/ground-transportation/shuttles-taxis/" target="_blank" rel="noreferrer">Airport information <span>&#x2197;&#xFE0E;</span></a>
           </article>
           <article>
             <p className="card-number">03</p>
@@ -292,7 +292,7 @@ export default function Home() {
               <h4>{hotel.name}</h4>
               <p className="hotel-address">{hotel.address}</p>
               <p>{hotel.description}</p>
-              <a href={hotel.href} target="_blank" rel="noreferrer">View hotel <span>↗</span></a>
+              <a href={hotel.href} target="_blank" rel="noreferrer">View hotel <span>&#x2197;&#xFE0E;</span></a>
             </article>
           ))}
         </div>
@@ -310,7 +310,7 @@ export default function Home() {
             <a href={place.href} target="_blank" rel="noreferrer" key={place.name}>
               <span>{String(index + 1).padStart(2, '0')}</span>
               <div><small>{place.type}</small><h3>{place.name}</h3><p>{place.description}</p></div>
-              <b aria-hidden="true">↗</b>
+              <b aria-hidden="true">&#x2197;&#xFE0E;</b>
             </a>
           ))}
         </div>

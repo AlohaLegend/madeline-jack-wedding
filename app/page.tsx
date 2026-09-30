@@ -43,9 +43,10 @@ const faqs = [
   },
 ];
 
-// The layout supports multiple paragraphs; replace this array with the couple's final story copy.
 const loveStoryParagraphs = [
-  'Madeline and Jack spend a lot of time near the beach with their dog. They’re looking forward to having everyone they love in one place for the wedding.',
+  'These two lovebirds have been in each other’s lives for a full decade now. They met on the first day of college in their dear friend Evan Candelmo’s dorm room and quickly hit it off as friends. It famously takes people a while to like Jack, so for three years they were friends, classmates, and collaborators. They studied abroad together in Berlin and always had fun when they got to be in each other’s company. Madeline was always gracious enough to help Jack with his homework, especially when he had not done any of it the night before.',
+  'The stars finally aligned for Jack one cold February night when his best friends Jake and Demitri came to visit the city. At the recently closed Kind Regards (RIP), under the shine of a disco ball, they finally got together, and the rest is history.',
+  'From road trips across the country and traveling around the world to visit family in England, to surviving a pandemic at Peter and Tracy’s house and recording songs in Jack’s childhood bedroom, to even raising a puppy together, Jack and Madeline have spent the last seven years growing together and supporting one another while pursuing their dreams. <3',
 ];
 
 const hotels = [

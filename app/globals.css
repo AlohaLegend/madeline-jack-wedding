@@ -193,7 +193,9 @@ footer small { opacity: .65; }
   .story-section > .eyebrow { margin-bottom: 22px; }
   .story-heading { grid-template-columns: 1fr minmax(180px,220px) 1fr; }
   .story-section h2 { margin-top: 30px; font-size: clamp(52px,5.6vw,78px); }
-  .story-copy-layout { margin-top: 18px; }
+  .story-copy-layout { grid-template-columns: 130px minmax(0,1fr); max-width: 1280px; margin-top: 18px; }
+  .story-copy { display: grid; grid-template-columns: 1.45fr .9fr 1.05fr; gap: clamp(24px,2.5vw,42px); }
+  .story-copy p + p { margin-top: 0; }
   .personal-details { margin-top: 24px; }
   .personal-details p { padding-block: 13px; font-size: clamp(21px,2vw,27px); }
   .personal-details span { margin-bottom: 8px; }

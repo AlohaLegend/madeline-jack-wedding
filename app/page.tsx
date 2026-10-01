@@ -158,14 +158,13 @@ export default function Home() {
         <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
       </section>
 
-      <section className="story-section" id="story" aria-labelledby="story-title">
+      <section className="story-section" id="story" aria-label="Our story">
         <p className="eyebrow">How we got here</p>
         <div className="story-heading">
           <figure>
             <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" width={1200} height={1458} loading="eager" />
           </figure>
         </div>
-        <h2 id="story-title">A lot of good days together.</h2>
         <div className="story-copy-layout">
           <p className="story-copy-label">Madeline &amp; Jack</p>
           <div className="story-copy">
@@ -176,7 +175,6 @@ export default function Home() {
 
       <section className="photo-break" aria-label="Madeline and Jack's engagement portraits">
         <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack during their engagement portrait session" width={1800} height={1219} loading="eager" />
-        <p>Madeline &amp; Jack, engaged.</p>
       </section>
 
       <section className="details-section" id="details" aria-labelledby="details-title">

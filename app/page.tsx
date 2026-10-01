@@ -154,7 +154,7 @@ export default function Home() {
       <section className="story-section" id="story" aria-labelledby="story-title">
         <div className="story-layout">
           <div className="story-intro">
-            <p className="eyebrow">Our story</p>
+            <p className="eyebrow whimsical">Our story</p>
             <h2 id="story-title">How we got here.</h2>
           </div>
           <div className="story-heading">
@@ -176,7 +176,7 @@ export default function Home() {
 
       <section className="details-section" id="details" aria-labelledby="details-title">
         <div className="section-number">01</div>
-        <p className="eyebrow">A weekend in Beverly Hills</p>
+        <p className="eyebrow whimsical">A weekend in Beverly Hills</p>
         <h2 id="details-title">The wedding weekend</h2>
         <p className="section-intro">
           The celebration will take place on April 10, 2026, at Dawnridge in Beverly Hills.
@@ -206,7 +206,7 @@ export default function Home() {
           <Image src={asset('/images/dawnridge-ceiling.webp')} alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" loading="eager" />
         </div>
         <div className="venue-copy">
-          <p className="eyebrow">Where we’ll celebrate</p>
+          <p className="eyebrow whimsical">Where we’ll celebrate</p>
           <h2 id="venue-title">The place we chose.</h2>
           <p>
             Jack and I cannot believe we get to share the evening with you at our dream
@@ -224,7 +224,7 @@ export default function Home() {
       </section>
 
       <section className="gallery-section" id="engagement" aria-labelledby="gallery-title">
-        <p className="eyebrow">The engagement</p>
+        <p className="eyebrow whimsical">The engagement</p>
         <h2 id="gallery-title">Our moment at Little Dume.</h2>
         <div className="gallery-grid">
           <figure className="gallery-one"><Image src={asset('/images/little-dume-cliffs.webp')} alt="Madeline and Jack beneath the cliffs at Little Dume after their engagement" fill sizes="(max-width: 700px) 52vw, 38vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
@@ -236,7 +236,7 @@ export default function Home() {
 
       <section className="travel-section" id="travel" aria-labelledby="travel-title">
         <div className="section-number">02</div>
-        <p className="eyebrow">Getting here &amp; getting around</p>
+        <p className="eyebrow whimsical">Getting here &amp; getting around</p>
         <h2 id="travel-title">Stay in Beverly Hills.</h2>
         <p className="section-intro">
           Beverly Hills is the easiest home base for the weekend. You’ll be close to
@@ -289,7 +289,7 @@ export default function Home() {
       <section className="guide-section" id="guide" aria-labelledby="guide-title">
         <div className="guide-heading">
           <div className="section-number">03</div>
-          <p className="eyebrow">Make a weekend of it</p>
+          <p className="eyebrow whimsical">Make a weekend of it</p>
           <h2 id="guide-title">Around Beverly Hills</h2>
           <p>Six places worth leaving the hotel for, from morning coffee to a quiet hour in the gardens.</p>
         </div>
@@ -319,7 +319,7 @@ export default function Home() {
 
       <section className="faq-section" id="faq" aria-labelledby="faq-title">
         <div>
-          <p className="eyebrow">Good to know</p>
+          <p className="eyebrow whimsical">Good to know</p>
           <h2 id="faq-title">Questions,<br />answered.</h2>
         </div>
         <div className="faq-list">
@@ -334,7 +334,7 @@ export default function Home() {
 
       <section className="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
         <Image className="rsvp-monogram" src={asset('/images/monogram-centered.png')} alt="" width={1300} height={398} />
-        <p className="eyebrow">For our favorite people</p>
+        <p className="eyebrow whimsical">For our favorite people</p>
         <h2 id="rsvp-title">We hope you’ll join us.</h2>
         <p>
           Online RSVPs will open after formal invitations are sent. When they do,

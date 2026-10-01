@@ -946,7 +946,7 @@ footer small { opacity: .65; }
   .venue-world .hotel-grid article { border-color: rgba(174,184,183,.42); }
 }
 
-/* Intimate evening palette and opening reveal */
+/* Warm salmon opening reveal */
 .opening-moment {
   position: fixed;
   inset: 0;
@@ -958,10 +958,10 @@ footer small { opacity: .65; }
   padding: 0;
   overflow: hidden;
   border: 0;
-  color: var(--cream);
+  color: var(--ink);
   background:
-    radial-gradient(circle at 52% 58%, rgba(121,84,104,.24), transparent 28%),
-    #32192d;
+    radial-gradient(circle at 52% 58%, rgba(242,236,223,.28), transparent 30%),
+    #d5a18f;
   cursor: pointer;
   appearance: none;
   animation: opening-in .75s cubic-bezier(.22,.74,.23,1) both;
@@ -970,7 +970,7 @@ footer small { opacity: .65; }
   content: '';
   position: absolute;
   inset: 20px;
-  border: 1px solid rgba(217,224,223,.64);
+  border: 1px solid rgba(38,48,39,.5);
   pointer-events: none;
 }
 .opening-letters {
@@ -996,8 +996,8 @@ footer small { opacity: .65; }
   gap: 12px;
   min-width: 250px;
   padding: 25px 35px;
-  color: var(--cream);
-  background: rgba(50,25,45,.72);
+  color: var(--ink);
+  background: rgba(213,161,143,.82);
   text-align: center;
 }
 .opening-center span,
@@ -1067,12 +1067,22 @@ footer small { opacity: .65; }
   display: block;
   max-width: 1180px;
 }
-.venue-world .travel-section { background: #32192d; }
+.venue-world .travel-section {
+  color: var(--ink);
+  background: #d5a18f;
+}
+.venue-world .travel-section .section-number,
+.venue-world .travel-section > .eyebrow,
+.venue-world .hotel-heading .eyebrow,
+.venue-world .card-number,
+.venue-world .hotel-topline { color: #314338; }
 .venue-world .arrival-grid article,
 .venue-world .hotel-grid article {
-  background: rgba(27,12,24,.26);
-  box-shadow: 0 12px 26px rgba(20,7,17,.16);
+  border-color: rgba(38,48,39,.28);
+  background: rgba(242,236,223,.2);
+  box-shadow: 0 12px 26px rgba(71,31,28,.1);
 }
+.venue-world .hotel-price { border-left-color: rgba(38,48,39,.32); }
 
 @media (max-width: 640px) {
   .opening-moment::before { inset: 10px; }

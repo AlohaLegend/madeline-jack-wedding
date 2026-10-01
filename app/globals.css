@@ -1566,6 +1566,23 @@ button:focus-visible,
 }
 .venue-world .story-copy p + p { margin-top: 1.25em; }
 
+/* First-name navigation and quieter footer sign-off */
+.venue-world .wordmark {
+  font-size: 18px;
+  letter-spacing: .035em;
+  text-transform: none;
+}
+.venue-world .wordmark span { margin: 0 .18em; }
+.venue-world footer p { font-size: clamp(30px,3.7vw,54px); }
+
+@media (max-width: 640px) {
+  .venue-world .wordmark {
+    font-size: 16px;
+    letter-spacing: .02em;
+  }
+  .venue-world footer p { font-size: 34px; }
+}
+
 @media (min-width: 961px) {
   .venue-world .story-section {
     min-height: calc(100svh - 70px);

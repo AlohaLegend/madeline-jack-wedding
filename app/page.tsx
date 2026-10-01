@@ -316,9 +316,9 @@ export default function Home() {
           <h2 id="faq-title">Questions,<br />answered.</h2>
         </div>
         <div className="faq-list">
-          {faqs.map((faq, index) => (
+          {faqs.map((faq) => (
             <details key={faq.question}>
-              <summary><span>{String(index + 1).padStart(2, '0')}</span>{faq.question}</summary>
+              <summary>{faq.question}</summary>
               <p>{faq.answer}</p>
             </details>
           ))}

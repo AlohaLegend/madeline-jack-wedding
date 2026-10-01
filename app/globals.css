@@ -516,7 +516,7 @@ footer small { opacity: .65; }
   top: 72px;
   filter: brightness(0) invert(1);
   mix-blend-mode: normal;
-  opacity: .09;
+  opacity: .12;
   transform: rotate(3deg);
 }
 .venue-world .travel-section::after {
@@ -1345,13 +1345,13 @@ footer small { opacity: .65; }
 .venue-world .gallery-section::after {
   left: -58px;
   bottom: 34px;
-  opacity: .08;
+  opacity: .105;
   transform: rotate(-8deg);
 }
 .venue-world .faq-section::before {
   top: 42px;
   right: -68px;
-  opacity: .08;
+  opacity: .11;
   transform: rotate(10deg);
 }
 
@@ -1360,7 +1360,7 @@ footer small { opacity: .65; }
   .venue-world .gallery-section::after,
   .venue-world .faq-section::before {
     width: 150px;
-    opacity: .07;
+    opacity: .09;
   }
   .venue-world .story-section::before { top: 92px; right: -64px; }
   .venue-world .gallery-section::after { left: -64px; bottom: 18px; }
@@ -1478,6 +1478,18 @@ button:focus-visible,
   .guide-list p,
   .faq-list details > p,
   .rsvp-section > p:not(.eyebrow) { font-size: 15px; }
+}
+
+/* FAQ questions stand on their own without decorative numbering. */
+.faq-list summary {
+  grid-template-columns: minmax(0,1fr) 20px;
+}
+.faq-list summary::after { grid-column: 2; }
+.faq-list details > p { margin-left: 0; }
+
+@media (max-width: 640px) {
+  .faq-list summary { grid-template-columns: minmax(0,1fr) 18px; }
+  .faq-list details > p { margin-left: 0; }
 }
 
 @media (max-width: 480px) {

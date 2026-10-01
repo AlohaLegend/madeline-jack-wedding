@@ -1113,11 +1113,14 @@ footer small { opacity: .65; }
 .venue-world .gallery-grid { max-width: 1120px; }
 
 @media (min-width: 961px) {
+  .venue-world .gallery-grid {
+    --gallery-pull: clamp(120px,calc(300px - 20svh),160px);
+  }
   .venue-world .gallery-one {
-    transform: translateX(clamp(64px,5.5vw,106px)) rotate(-1.1deg);
+    transform: translateX(var(--gallery-pull)) rotate(-1.1deg);
   }
   .venue-world .gallery-four {
-    transform: translateX(clamp(-106px,-5.5vw,-64px)) rotate(-.8deg);
+    transform: translateX(calc(0px - var(--gallery-pull))) rotate(-.8deg);
   }
 }
 

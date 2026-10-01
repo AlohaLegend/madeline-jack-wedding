@@ -1323,11 +1323,13 @@ footer small { opacity: .65; }
   display: block;
   position: absolute;
   z-index: 1;
-  width: clamp(180px,20vw,300px);
+  left: auto;
+  width: clamp(155px,16vw,230px);
+  height: auto;
   aspect-ratio: 1;
   background: url('/images/dawnridge-sun-impression.png') center / contain no-repeat;
   mix-blend-mode: multiply;
-  opacity: .2;
+  opacity: .09;
   pointer-events: none;
 }
 .venue-world .story-section > *,
@@ -1337,19 +1339,19 @@ footer small { opacity: .65; }
 }
 .venue-world .story-section::before {
   top: 72px;
-  right: -26px;
+  right: -62px;
   transform: rotate(7deg);
 }
 .venue-world .gallery-section::after {
-  left: -38px;
+  left: -58px;
   bottom: 34px;
-  opacity: .16;
+  opacity: .08;
   transform: rotate(-8deg);
 }
 .venue-world .faq-section::before {
   top: 42px;
-  right: -28px;
-  opacity: .18;
+  right: -68px;
+  opacity: .08;
   transform: rotate(10deg);
 }
 
@@ -1357,8 +1359,8 @@ footer small { opacity: .65; }
   .venue-world .story-section::before,
   .venue-world .gallery-section::after,
   .venue-world .faq-section::before {
-    width: 175px;
-    opacity: .14;
+    width: 150px;
+    opacity: .07;
   }
   .venue-world .story-section::before { top: 92px; right: -64px; }
   .venue-world .gallery-section::after { left: -64px; bottom: 18px; }

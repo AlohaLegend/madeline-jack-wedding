@@ -491,8 +491,8 @@ footer small { opacity: .65; }
   position: absolute;
   z-index: 0;
   width: clamp(230px,27vw,390px);
-  aspect-ratio: 340 / 190;
-  background: url('/images/whimsy-sprig.svg') center / contain no-repeat;
+  aspect-ratio: 380 / 240;
+  background: url('/images/dawnridge-cartouche.svg') center / contain no-repeat;
   opacity: .11;
   pointer-events: none;
 }
@@ -513,6 +513,7 @@ footer small { opacity: .65; }
 .venue-world .details-section::after {
   right: -66px;
   top: 86px;
+  background-image: url('/images/dawnridge-ray.svg');
   filter: invert(1);
   opacity: .1;
   transform: rotate(174deg);
@@ -520,12 +521,14 @@ footer small { opacity: .65; }
 .venue-world .travel-section::after {
   left: -70px;
   bottom: 45px;
+  background-image: url('/images/dawnridge-ray.svg');
   opacity: .14;
   transform: rotate(-5deg);
 }
 .venue-world .guide-section::after {
   right: -72px;
   top: 44px;
+  background-image: url('/images/dawnridge-cartouche.svg');
   transform: rotate(176deg);
 }
 .venue-world .faq-section::after {
@@ -536,6 +539,7 @@ footer small { opacity: .65; }
 .venue-world .rsvp-section::after {
   right: -58px;
   bottom: -22px;
+  background-image: url('/images/dawnridge-ray.svg');
   transform: rotate(178deg);
 }
 

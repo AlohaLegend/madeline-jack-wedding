@@ -231,14 +231,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="gallery-section" aria-labelledby="gallery-title">
+      <section className="gallery-section" id="engagement" aria-labelledby="gallery-title">
         <p className="eyebrow">The engagement</p>
-        <h2 id="gallery-title">A few favorites.</h2>
+        <h2 id="gallery-title">Our moment at Little Dume.</h2>
         <div className="gallery-grid">
-          <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
-          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking with their dog during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
-          <figure className="gallery-three"><Image src={asset('/images/couple-dog.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
-          <figure className="gallery-four"><Image src={asset('/images/beach-family.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
+          <figure className="gallery-one"><Image src={asset('/images/little-dume-cliffs.webp')} alt="Madeline and Jack beneath the cliffs at Little Dume after their engagement" fill sizes="(max-width: 700px) 52vw, 38vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
+          <figure className="gallery-two"><Image src={asset('/images/little-dume-picnic.webp')} alt="The engagement picnic at Little Dume" fill sizes="(max-width: 700px) 42vw, 29vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
+          <figure className="gallery-three"><Image src={asset('/images/little-dume-dogs.webp')} alt="Jack playing with the dogs on the beach at Little Dume" fill sizes="(max-width: 700px) 42vw, 31vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
         </div>
       </section>
 

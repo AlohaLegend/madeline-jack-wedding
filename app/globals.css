@@ -142,9 +142,8 @@ section[id] { scroll-margin-top: 78px; }
 .registry-section > div:last-child > p:not(.eyebrow) { max-width: 580px; margin: 0; font-size: 13px; line-height: 1.85; }
 .registry-note { width: fit-content; margin-top: 48px; padding-bottom: 8px; border-bottom: 1px solid currentColor; text-transform: uppercase; letter-spacing: .16em; font-size: 9px; }
 
-.faq-section { display: grid; grid-template-columns: minmax(300px,.8fr) minmax(0,1.2fr); gap: clamp(50px,8vw,130px); padding-block: var(--section-space); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
+.faq-section { display: grid; grid-template-columns: minmax(260px,.65fr) minmax(0,1.35fr); gap: clamp(40px,6vw,100px); padding-block: var(--section-space); padding-inline: max(7vw,calc((100vw - var(--editorial-width))/2)); background: var(--cream); }
 .faq-section > div { min-width: 0; }
-.faq-section > div:first-child img { display: block; width: min(270px,75%); margin: 65px 0 0 auto; filter: saturate(.72); }
 .faq-list { align-self: center; border-top: 1px solid var(--line); }
 .faq-list details { border-bottom: 1px solid var(--line); }
 .faq-list summary { display: grid; grid-template-columns: 55px minmax(0,1fr) 20px; align-items: center; min-height: 94px; cursor: pointer; list-style: none; font-family: var(--font-serif), Georgia, serif; font-size: clamp(23px,2.4vw,34px); }
@@ -215,7 +214,6 @@ footer small { opacity: .65; }
   .hotel-grid h4 { margin-top: 48px; }
 
   .faq-section { min-height: calc(100svh - 70px); gap: clamp(50px,7vw,110px); padding-block: 46px; }
-  .faq-section > div:first-child img { width: min(220px,65%); margin-top: 34px; }
   .faq-section h2 { font-size: clamp(48px,5.2vw,74px); }
   .faq-list summary { min-height: 64px; font-size: clamp(21px,1.8vw,27px); }
 
@@ -278,7 +276,6 @@ footer small { opacity: .65; }
   .gallery-three { grid-column: 2; grid-row: 2; }
   .gallery-four { grid-column: 2; grid-row: 1; }
   .faq-section { gap: 46px; padding: 72px 24px; }
-  .faq-section > div:first-child img { width: min(220px,70%); margin: 38px auto 0; }
   .faq-list summary { min-height: 78px; font-size: clamp(22px,6.5vw,28px); }
   .faq-list details > p { margin: 0 28px 26px 45px; }
   footer { flex-direction: column; align-items: flex-start; gap: 34px; }
@@ -399,7 +396,6 @@ footer small { opacity: .65; }
   .faq-section { gap: 30px; padding: 54px 20px; }
   .faq-section .eyebrow { margin-bottom: 27px; }
   .faq-section h2 { margin-bottom: 0; font-size: 50px; }
-  .faq-section > div:first-child img { display: none; }
   .faq-list summary { grid-template-columns: 36px minmax(0,1fr) 18px; min-height: 64px; font-size: 22px; line-height: 1.05; }
   .faq-list details > p { margin: 0 18px 22px 36px; font-size: 13px; line-height: 1.6; }
 
@@ -682,13 +678,6 @@ footer small { opacity: .65; }
   border-bottom: 5px solid var(--gold);
 }
 .venue-world .faq-section .eyebrow { color: var(--lacquer); }
-.venue-world .faq-section > div:first-child img {
-  padding: 7px;
-  background: var(--cream);
-  border: 1px solid var(--gold);
-  filter: saturate(.9) contrast(1.02);
-  box-shadow: 0 16px 32px rgba(29,43,34,.18);
-}
 .venue-world .faq-list { border-top-color: rgba(111,48,43,.35); }
 .venue-world .faq-list details { border-bottom-color: rgba(111,48,43,.3); }
 .venue-world .faq-list summary::after,
@@ -915,8 +904,6 @@ footer small { opacity: .65; }
   background: #bdc8b2;
   border-bottom: 2px solid var(--silver);
 }
-.venue-world .faq-section > div:first-child img { border-color: rgba(125,138,136,.7); }
-
 .venue-world .rsvp-section {
   background: #d5a18f;
   border-bottom: 2px solid var(--silver);

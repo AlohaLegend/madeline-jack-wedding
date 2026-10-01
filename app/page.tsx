@@ -322,7 +322,6 @@ export default function Home() {
         <div>
           <p className="eyebrow">Good to know</p>
           <h2 id="faq-title">Questions,<br />answered.</h2>
-          <Image src={asset('/images/dawnridge-table.webp')} alt="Vintage glassware at Dawnridge" width={564} height={846} loading="eager" />
         </div>
         <div className="faq-list">
           {faqs.map((faq, index) => (

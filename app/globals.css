@@ -1110,6 +1110,11 @@ footer small { opacity: .65; }
   width: 100% !important;
   height: 100% !important;
 }
+.venue-world .gallery-grid { max-width: 1120px; }
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .venue-world .gallery-grid { width: min(100%,590px); }
+}
 
 /* Final responsive usability pass */
 .site-header { font-size: 11px; }

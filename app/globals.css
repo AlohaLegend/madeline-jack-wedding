@@ -749,3 +749,196 @@ footer small { opacity: .65; }
   .venue-world .mini-image img { inset: 6px !important; width: calc(100% - 12px) !important; height: calc(100% - 12px) !important; }
   .venue-world .gallery-grid img { inset: 4px !important; width: calc(100% - 8px) !important; height: calc(100% - 8px) !important; }
 }
+
+/* Warmer, more personal finish */
+.venue-world {
+  --gold: #aeb8b7;
+  --silver: #aeb8b7;
+  --silver-bright: #d9e0df;
+  --pewter: #7d8a88;
+}
+
+.venue-world .site-header {
+  border-bottom-color: rgba(174,184,183,.56);
+  box-shadow: none;
+}
+.venue-world .wordmark,
+.venue-world .nav-rsvp,
+.venue-world .hero-card .hero-date,
+.venue-world .scroll-cue,
+.venue-world .details-section .section-number,
+.venue-world .weekend-grid span,
+.venue-world .gallery-section .eyebrow,
+.venue-world .travel-section .section-number,
+.venue-world .travel-section > .eyebrow,
+.venue-world .hotel-heading .eyebrow,
+.venue-world .card-number,
+.venue-world .hotel-topline,
+.venue-world footer p i,
+.venue-world footer span { color: var(--silver-bright); }
+
+.venue-world .hero::after {
+  border-color: rgba(190,201,199,.72);
+  box-shadow: none;
+}
+.venue-world .hero-card {
+  width: min(590px,calc(100vw - 58px));
+  padding: clamp(26px,3.5vw,43px) clamp(36px,5.2vw,70px) 25px;
+  border: 1px solid rgba(205,214,212,.78);
+  border-radius: 38px;
+  background: rgba(39,67,48,.9);
+  box-shadow: 0 16px 38px rgba(10,24,16,.24);
+}
+.venue-world .hero-card::before,
+.venue-world .hero-card::after { display: none; }
+
+.venue-world .story-section {
+  background: #bdc8b2;
+  border-top: 2px solid var(--silver);
+}
+.venue-world .story-section::before,
+.venue-world .gallery-section::before,
+.venue-world .guide-section::before,
+.venue-world .faq-section::before,
+.venue-world .rsvp-section::before { display: none; }
+.venue-world .story-heading figure {
+  border-color: rgba(125,138,136,.62);
+  box-shadow: 0 18px 36px rgba(37,45,32,.15);
+}
+.venue-world .story-copy-label { border-top-color: var(--pewter); }
+
+.venue-world .photo-break {
+  border-top: 2px solid var(--silver);
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .photo-break img { filter: grayscale(1) sepia(.08) brightness(.77) contrast(1.02); }
+
+.venue-world .details-section {
+  background: var(--deep);
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .weekend-grid {
+  gap: 16px;
+  background: transparent;
+  border: 0;
+}
+.venue-world .weekend-grid article,
+.venue-world .weekend-grid article + article {
+  border: 1px solid rgba(174,184,183,.42);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  box-shadow: 0 12px 24px rgba(8,22,14,.1);
+}
+.venue-world .weekend-grid article::before { display: none; }
+.venue-world .weekend-grid strong { color: #e8c6bb; }
+
+.venue-world .venue-section { background: #d5a18f; }
+.venue-world .venue-image { border-right: 2px solid var(--silver); }
+.venue-world .venue-image::after,
+.venue-world .venue-copy::before { display: none; }
+.venue-world .venue-copy { background: none; }
+.venue-world .venue-copy .eyebrow { color: #55302d; }
+.venue-world .mini-image {
+  border-color: rgba(125,138,136,.7);
+  box-shadow: 0 16px 30px rgba(71,31,28,.14);
+  transform: rotate(1.2deg);
+}
+
+@media (min-width: 961px) {
+  .venue-world .venue-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 68px 6vw 82px;
+  }
+  .venue-world .venue-image {
+    width: min(82vw,1120px);
+    height: min(54vw,600px);
+    min-height: 0;
+    margin: 0 auto;
+    border: 9px solid var(--cream);
+    box-shadow: 0 20px 48px rgba(54,43,32,.16);
+    transform: rotate(-.45deg);
+  }
+  .venue-world .venue-copy {
+    z-index: 2;
+    width: min(720px,57vw);
+    margin: -105px 7vw 0 auto;
+    padding: 48px 58px 45px;
+    border-radius: 18px;
+    background: rgba(213,161,143,.97);
+    box-shadow: 0 18px 42px rgba(67,35,31,.16);
+  }
+  .venue-world .mini-image { width: min(100%,190px); margin-top: 28px; }
+}
+
+.venue-world .gallery-section {
+  background: #254232;
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .gallery-grid figure,
+.venue-world .gallery-grid figure:nth-child(even) {
+  border-color: rgba(174,184,183,.78);
+  box-shadow: 0 16px 34px rgba(7,21,13,.22);
+}
+
+.venue-world .travel-section {
+  background: #733630;
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .arrival-grid,
+.venue-world .hotel-grid {
+  gap: 16px;
+  background: transparent;
+  border: 0;
+}
+.venue-world .arrival-grid article,
+.venue-world .hotel-grid article {
+  border: 1px solid rgba(174,184,183,.4);
+  border-radius: 18px;
+  background: rgba(77,31,29,.42);
+  box-shadow: 0 12px 26px rgba(48,15,14,.12);
+}
+.venue-world .hotel-price { border-left-color: rgba(174,184,183,.48); }
+
+.venue-world .guide-section {
+  background: var(--cream);
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .guide-list > a:hover,
+.venue-world .guide-list > a:focus-visible { background: rgba(211,154,135,.13); }
+
+.venue-world .faq-section {
+  background: #bdc8b2;
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .faq-section > div:first-child img { border-color: rgba(125,138,136,.7); }
+
+.venue-world .rsvp-section {
+  background: #d5a18f;
+  border-bottom: 2px solid var(--silver);
+}
+.venue-world .rsvp-monogram { filter: grayscale(.55) sepia(.08); }
+.venue-world footer {
+  background: var(--deep);
+  border-top: 1px solid var(--silver);
+}
+
+@media (max-width: 960px) {
+  .venue-world .venue-image { border-right: 0; border-bottom: 2px solid var(--silver); }
+}
+
+@media (max-width: 640px) {
+  .venue-world .hero-card {
+    width: calc(100vw - 38px);
+    padding: 23px 26px 20px;
+    border-radius: 28px;
+  }
+  .venue-world .weekend-grid,
+  .venue-world .arrival-grid,
+  .venue-world .hotel-grid { gap: 12px; }
+  .venue-world .weekend-grid article,
+  .venue-world .weekend-grid article + article,
+  .venue-world .arrival-grid article,
+  .venue-world .hotel-grid article { border-color: rgba(174,184,183,.42); }
+}

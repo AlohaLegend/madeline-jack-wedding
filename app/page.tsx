@@ -209,13 +209,8 @@ export default function Home() {
           <Image src={asset('/images/dawnridge-ceiling.webp')} alt="Painted ceiling and chandelier at Dawnridge" fill sizes="(max-width: 800px) 100vw, 50vw" loading="eager" />
         </div>
         <div className="venue-copy">
-          <p className="eyebrow">The setting</p>
-          <h2 id="venue-title">Tucked into the hills.</h2>
-          <div className="venue-meta" aria-label="Dawnridge, built in 1949, Beverly Hills">
-            <span>Dawnridge</span>
-            <span>1949</span>
-            <span>Beverly Hills</span>
-          </div>
+          <p className="eyebrow">Where we’ll celebrate</p>
+          <h2 id="venue-title">The place we chose.</h2>
           <p>
             Jack and I cannot believe we get to share the evening with you at our dream
             venue! Dawnridge is the former home of set &amp; costume designer Tony Duquette.

@@ -502,6 +502,146 @@ footer small { opacity: .65; }
   }
 }
 
+/* Whimsical botanical and theatrical layer */
+.venue-world .story-section,
+.venue-world .details-section,
+.venue-world .gallery-section,
+.venue-world .travel-section,
+.venue-world .guide-section,
+.venue-world .faq-section,
+.venue-world .rsvp-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.venue-world .story-section::after,
+.venue-world .details-section::after,
+.venue-world .travel-section::after,
+.venue-world .guide-section::after,
+.venue-world .faq-section::after,
+.venue-world .rsvp-section::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: clamp(230px,27vw,390px);
+  aspect-ratio: 340 / 190;
+  background: url('/images/whimsy-sprig.svg') center / contain no-repeat;
+  opacity: .11;
+  pointer-events: none;
+}
+.venue-world .story-section::after {
+  left: -70px;
+  bottom: -22px;
+  transform: rotate(8deg);
+}
+.venue-world .details-section::after {
+  right: -66px;
+  top: 86px;
+  filter: invert(1);
+  opacity: .1;
+  transform: rotate(174deg);
+}
+.venue-world .travel-section::after {
+  left: -70px;
+  bottom: 45px;
+  opacity: .14;
+  transform: rotate(-5deg);
+}
+.venue-world .guide-section::after {
+  right: -72px;
+  top: 44px;
+  transform: rotate(176deg);
+}
+.venue-world .faq-section::after {
+  left: -75px;
+  bottom: -16px;
+  transform: rotate(5deg);
+}
+.venue-world .rsvp-section::after {
+  right: -58px;
+  bottom: -22px;
+  transform: rotate(178deg);
+}
+
+.venue-world .story-intro h2::after,
+.venue-world .details-section h2::after,
+.venue-world .gallery-section h2::after,
+.venue-world .travel-section > h2::after,
+.venue-world .guide-heading h2::after,
+.venue-world .faq-section h2::after,
+.venue-world .rsvp-section h2::after {
+  content: '';
+  display: block;
+  width: 78px;
+  height: 15px;
+  margin: 18px auto 0;
+  border-top: 1px solid currentColor;
+  border-radius: 50%;
+  opacity: .48;
+  transform: rotate(-3deg);
+}
+.venue-world .story-intro h2::after,
+.venue-world .guide-heading h2::after,
+.venue-world .faq-section h2::after {
+  margin-left: 0;
+}
+
+.venue-world .weekend-grid article:first-child {
+  border-radius: 42px 15px 42px 15px;
+  transform: rotate(-.28deg);
+}
+.venue-world .weekend-grid article:last-child {
+  border-radius: 15px 42px 15px 42px;
+  transform: rotate(.28deg);
+}
+.venue-world .arrival-grid article:nth-child(1),
+.venue-world .hotel-grid article:nth-child(1),
+.venue-world .hotel-grid article:nth-child(4) {
+  border-radius: 36px 14px 36px 14px;
+}
+.venue-world .arrival-grid article:nth-child(2),
+.venue-world .hotel-grid article:nth-child(2) {
+  border-radius: 14px 36px 14px 36px;
+}
+.venue-world .arrival-grid article:nth-child(3),
+.venue-world .hotel-grid article:nth-child(3) {
+  border-radius: 42px 42px 14px 14px;
+}
+
+.venue-world .faq-list summary > span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(38,48,39,.32);
+  border-radius: 50% 42% 50% 44%;
+}
+
+.venue-world .button {
+  border-radius: 48% 52% 46% 54% / 58% 44% 56% 42%;
+}
+
+@media (max-width: 960px) {
+  .venue-world .story-intro h2::after,
+  .venue-world .guide-heading h2::after,
+  .venue-world .faq-section h2::after { margin-left: auto; }
+}
+
+@media (max-width: 640px) {
+  .venue-world .story-section::after,
+  .venue-world .details-section::after,
+  .venue-world .travel-section::after,
+  .venue-world .guide-section::after,
+  .venue-world .faq-section::after,
+  .venue-world .rsvp-section::after {
+    width: 210px;
+    opacity: .09;
+  }
+  .venue-world .weekend-grid article:first-child,
+  .venue-world .weekend-grid article:last-child { transform: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .venue-world .hero-card,
   .venue-world .scroll-cue::after { animation: none; }

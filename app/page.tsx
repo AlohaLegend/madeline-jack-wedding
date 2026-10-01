@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import OpeningMoment from './opening-moment';
+import SiteHeader from './site-header';
 
 const asset = (path: string) => path;
 const showRegistry = false;
@@ -127,18 +128,7 @@ export default function Home() {
   return (
     <main className="venue-world">
       <OpeningMoment />
-      <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">M <span>·</span> J</a>
-        <nav aria-label="Primary navigation">
-          <a href="#story">Our story</a>
-          <a href="#details">Weekend</a>
-          <a href="#venue">Dawnridge</a>
-          <a href="#travel">Travel</a>
-          <a href="#guide">Guide</a>
-          <a href="#faq">FAQ</a>
-          <a className="nav-rsvp" href="#rsvp">RSVP</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-card">

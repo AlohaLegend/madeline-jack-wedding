@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import OpeningMoment from './opening-moment';
 
 const asset = (path: string) => path;
 const showRegistry = false;
@@ -43,9 +44,9 @@ const faqs = [
 ];
 
 const loveStoryParagraphs = [
-  'These two lovebirds have been in each other’s lives for a full decade now. They met on the first day of college in their dear friend Evan Candelmo’s dorm room and quickly hit it off as friends. It famously takes people a while to like Jack, so for three years they were friends, classmates, and collaborators. They studied abroad together in Berlin and always had fun when they got to be in each other’s company. Madeline was always gracious enough to help Jack with his homework, especially when he had not done any of it the night before.',
-  'The stars finally aligned for Jack one cold February night when his best friends Jake and Demitri came to visit the city. At the recently closed Kind Regards (RIP), under the shine of a disco ball, they finally got together, and the rest is history.',
-  'From road trips across the country and traveling around the world to visit family in England, to surviving a pandemic at Peter and Tracy’s house and recording songs in Jack’s childhood bedroom, to even raising a puppy together, Jack and Madeline have spent the last seven years growing together and supporting one another while pursuing their dreams. <3',
+  'These two lovebirds have been in each other’s lives for a full decade now. They met on the first day of college in a friend’s dorm room and quickly hit it off as friends. It famously takes people a while to like Jack, so for three years they were friends, classmates, and collaborators. They studied abroad together in Berlin and always had fun when they got to be in each other’s company. Madeline was always gracious enough to help with his homework, especially when he had not done any of it the night before.',
+  'The stars finally aligned one cold February night while friends were visiting the city. At the recently closed Kind Regards (RIP), under the shine of a disco ball, they finally got together, and the rest is history.',
+  'From road trips across the country and traveling around the world to visit family in England, to spending a pandemic with family and recording songs in a childhood bedroom, to raising a puppy together, they have spent the last seven years growing together and supporting one another while pursuing their dreams. <3',
 ];
 
 const hotels = [
@@ -131,6 +132,7 @@ const nearbyGuide = [
 export default function Home() {
   return (
     <main className="venue-world">
+      <OpeningMoment />
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">M <span>·</span> J</a>
         <nav aria-label="Primary navigation">
@@ -145,15 +147,12 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home" aria-labelledby="hero-title">
-        <div className="hero-image" aria-hidden="true" style={{ backgroundImage: `url('${asset('/images/dawnridge-entry-hq.webp')}')` }} />
-        <div className="hero-shade" aria-hidden="true" />
         <div className="hero-card">
           <Image className="hero-monogram" src={asset('/images/monogram-centered.png')} alt="Madeline Borehan and Jack Kleinick monogram" width={1300} height={398} priority />
           <h1 id="hero-title" className="sr-only">Madeline Borehan and Jack Kleinick are getting married</h1>
           <p>Are getting married</p>
           <p className="hero-date">April 10, 2026</p>
         </div>
-        <p className="hero-note hero-note-left">Madeline Borehan &amp; Jack Kleinick</p>
         <p className="hero-note hero-note-right">Dawnridge · Beverly Hills</p>
         <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
       </section>
@@ -166,7 +165,6 @@ export default function Home() {
           </figure>
         </div>
         <div className="story-copy-layout">
-          <p className="story-copy-label">Madeline &amp; Jack</p>
           <div className="story-copy">
             {loveStoryParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>

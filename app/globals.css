@@ -1100,3 +1100,16 @@ footer small { opacity: .65; }
   .opening-letters,
   .opening-moment.is-leaving { animation: none; }
 }
+
+/* The Little Dume scans already include their original film borders. */
+.venue-world .gallery-grid figure,
+.venue-world .gallery-grid figure:nth-child(even) {
+  border: 0;
+  background: transparent;
+  box-shadow: 0 16px 34px rgba(7,21,13,.18);
+}
+.venue-world .gallery-grid img {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -602,8 +602,7 @@ footer small { opacity: .65; }
   .venue-world .details-section::after,
   .venue-world .travel-section::after,
   .venue-world .guide-section::after,
-  .venue-world .faq-section::after,
-  .venue-world .rsvp-section::after {
+  .venue-world .faq-section::after {
     width: 210px;
     opacity: .09;
   }

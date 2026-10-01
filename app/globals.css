@@ -485,8 +485,7 @@ footer small { opacity: .65; }
 .venue-world .details-section::after,
 .venue-world .travel-section::after,
 .venue-world .guide-section::after,
-.venue-world .faq-section::after,
-.venue-world .rsvp-section::after {
+.venue-world .faq-section::after {
   content: '';
   position: absolute;
   z-index: 0;
@@ -534,12 +533,6 @@ footer small { opacity: .65; }
   bottom: -100px;
   transform: scaleX(-1) rotate(-5deg);
 }
-.venue-world .rsvp-section::after {
-  right: -42px;
-  bottom: -110px;
-  transform: rotate(3deg);
-}
-
 .venue-world .story-intro h2::after,
 .venue-world .details-section h2::after,
 .venue-world .gallery-section h2::after,

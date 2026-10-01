@@ -1114,6 +1114,21 @@ footer small { opacity: .65; }
 
 @media (min-width: 641px) and (max-width: 960px) {
   .venue-world .gallery-grid { width: min(100%,590px); }
+  .venue-world .gallery-one,
+  .venue-world .gallery-two { transform: translateX(44px) rotate(-.65deg); }
+  .venue-world .gallery-three,
+  .venue-world .gallery-four { transform: translateX(-44px) rotate(.65deg); }
+  .venue-world .gallery-one { z-index: 3; }
+  .venue-world .gallery-three { z-index: 4; }
+}
+
+@media (max-width: 640px) {
+  .venue-world .gallery-one,
+  .venue-world .gallery-two { transform: translateX(14px) rotate(-.45deg); }
+  .venue-world .gallery-three,
+  .venue-world .gallery-four { transform: translateX(-14px) rotate(.45deg); }
+  .venue-world .gallery-one { z-index: 3; }
+  .venue-world .gallery-three { z-index: 4; }
 }
 
 /* Final responsive usability pass */

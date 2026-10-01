@@ -1103,7 +1103,7 @@ footer small { opacity: .65; }
 .venue-world .gallery-grid figure:nth-child(even) {
   border: 0;
   background: transparent;
-  box-shadow: 0 16px 34px rgba(7,21,13,.18);
+  box-shadow: none;
 }
 .venue-world .gallery-grid img {
   inset: 0 !important;

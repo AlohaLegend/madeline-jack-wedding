@@ -53,7 +53,7 @@ const hotels = [
   {
     name: 'The Peninsula Beverly Hills',
     label: 'Classic luxury stay',
-    price: '$$$$',
+    price: '$$$',
     address: '9882 South Santa Monica Boulevard',
     description: 'A polished, full-service Beverly Hills stay with a rooftop pool, spa, afternoon tea, and complimentary house-car service within Beverly Hills and Century City.',
     href: 'https://www.peninsula.com/en/beverly-hills/5-star-luxury-hotel-beverly-hills',
@@ -61,7 +61,7 @@ const hotels = [
   {
     name: 'The Maybourne Beverly Hills',
     label: 'Best walkable location',
-    price: '$$$$',
+    price: '$$$',
     address: '225 North Canon Drive',
     description: 'A polished stay beside Beverly Cañon Gardens, one block from Rodeo Drive and an easy walk to central Beverly Hills restaurants.',
     href: 'https://www.maybourne.com/en/hotels/the-maybourne-beverly-hills',
@@ -69,7 +69,7 @@ const hotels = [
   {
     name: 'Hotel 850 SVB',
     label: 'Small design hotel',
-    price: '$$$',
+    price: '$$',
     address: '850 North San Vicente Boulevard',
     description: 'A 23-room hotel with Rita Konig interiors, a residential feel, breakfast in the living room, and a roof deck. It sits between Beverly Hills and West Hollywood.',
     href: 'https://www.hotel850svb.com/',
@@ -77,7 +77,7 @@ const hotels = [
   {
     name: 'Avalon Hotel Beverly Hills',
     label: 'Relaxed alternative',
-    price: '$$',
+    price: '$',
     address: '9400 West Olympic Boulevard',
     description: 'A quieter mid-century hotel centered around a pool. It is a good option for guests who want Beverly Hills without staying in the busiest part of town.',
     href: 'https://www.avalon-hotel.com/beverly-hills/',
@@ -274,7 +274,7 @@ export default function Home() {
                 <span>{String(index + 1).padStart(2, '0')}</span>
                 <span className="hotel-meta">
                   <span>{hotel.label}</span>
-                  <span className="hotel-price" aria-label={`Relative price tier ${hotel.price.length} of 4`}>{hotel.price}</span>
+                  <span className="hotel-price" aria-label={`Relative price tier ${hotel.price.length} of 3`}>{hotel.price}</span>
                 </span>
               </div>
               <h4>{hotel.name}</h4>

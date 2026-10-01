@@ -157,16 +157,21 @@ export default function Home() {
         <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
       </section>
 
-      <section className="story-section" id="story" aria-label="Our story">
-        <p className="eyebrow">How we got here</p>
-        <div className="story-heading">
+      <section className="story-section" id="story" aria-labelledby="story-title">
+        <div className="story-layout">
+          <div className="story-intro">
+            <p className="eyebrow">Our story</p>
+            <h2 id="story-title">How we got here.</h2>
+          </div>
+          <div className="story-heading">
           <figure>
             <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" width={1200} height={1458} loading="eager" />
           </figure>
-        </div>
-        <div className="story-copy-layout">
-          <div className="story-copy">
-            {loveStoryParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
+          <div className="story-copy-layout">
+            <div className="story-copy">
+              {loveStoryParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </div>
           </div>
         </div>
       </section>

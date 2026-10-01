@@ -411,30 +411,6 @@ footer small { opacity: .65; }
 }
 
 /* A touch of whimsy */
-.venue-world .whimsical {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-.venue-world .whimsical::before,
-.venue-world .whimsical::after {
-  content: '';
-  flex: 0 0 5px;
-  width: 5px;
-  height: 5px;
-  border: 1px solid currentColor;
-  opacity: .62;
-  transform: rotate(45deg);
-}
-.venue-world .venue-copy .whimsical,
-.venue-world .guide-heading .whimsical,
-.venue-world .faq-section .whimsical {
-  justify-content: flex-start;
-}
-@media (min-width: 961px) {
-  .venue-world .story-intro .whimsical { justify-content: flex-start; }
-}
 .venue-world .hero-card {
   animation: gentle-float 7s ease-in-out infinite;
 }
@@ -490,16 +466,6 @@ footer small { opacity: .65; }
 @keyframes cue-breathe {
   0%, 100% { opacity: .45; transform: scaleY(.76); transform-origin: top; }
   50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-}
-
-@media (max-width: 640px) {
-  .venue-world .whimsical { gap: 9px; }
-  .venue-world .whimsical::before,
-  .venue-world .whimsical::after {
-    flex-basis: 4px;
-    width: 4px;
-    height: 4px;
-  }
 }
 
 /* Whimsical botanical and theatrical layer */

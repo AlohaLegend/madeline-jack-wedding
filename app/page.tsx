@@ -233,6 +233,7 @@ export default function Home() {
           <figure className="gallery-one"><Image src={asset('/images/little-dume-cliffs.webp')} alt="Madeline and Jack beneath the cliffs at Little Dume after their engagement" fill sizes="(max-width: 700px) 52vw, 38vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
           <figure className="gallery-two"><Image src={asset('/images/little-dume-picnic.webp')} alt="The engagement picnic at Little Dume" fill sizes="(max-width: 700px) 42vw, 29vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
           <figure className="gallery-three"><Image src={asset('/images/little-dume-dogs.webp')} alt="Jack playing with the dogs on the beach at Little Dume" fill sizes="(max-width: 700px) 42vw, 31vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/little-dume-embrace.webp')} alt="Jack kissing Madeline on the forehead at Little Dume" fill sizes="(max-width: 700px) 50vw, 30vw" loading="eager" style={{ objectFit: 'contain' }} /></figure>
         </div>
       </section>
 

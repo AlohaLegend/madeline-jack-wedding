@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const storageKey = 'kleinicks-opening-seen';
+const storageKey = 'kleinicks-opening-seen-v2';
 
 export default function OpeningMoment() {
   const [visible, setVisible] = useState(true);
@@ -45,7 +45,10 @@ export default function OpeningMoment() {
       onClick={dismiss}
       aria-label="Enter Madeline and Jack's wedding website"
     >
-      <span className="opening-letters" aria-hidden="true">M J</span>
+      <span className="opening-letters" aria-hidden="true">
+        <span>M</span>
+        <span>J</span>
+      </span>
       <span className="opening-center">
         <span>April 10, 2026</span>
         <b>Madeline &amp; Jack</b>

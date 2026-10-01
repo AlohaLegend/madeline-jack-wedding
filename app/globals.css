@@ -439,8 +439,7 @@ footer small { opacity: .65; }
   animation: gentle-float 7s ease-in-out infinite;
 }
 .venue-world .story-heading figure,
-.venue-world .mini-image,
-.venue-world .gallery-grid figure {
+.venue-world .mini-image {
   transition: transform .55s cubic-bezier(.2,.75,.25,1), box-shadow .55s ease;
 }
 .venue-world .story-heading figure:hover {
@@ -450,10 +449,6 @@ footer small { opacity: .65; }
 .venue-world .mini-image:hover {
   transform: rotate(-1deg) translateY(-3px);
 }
-.venue-world .gallery-one:hover { transform: rotate(-2deg) translate(-4px,-4px); }
-.venue-world .gallery-two:hover { transform: rotate(2deg) translate(2px,-5px); }
-.venue-world .gallery-three:hover { transform: rotate(2.4deg) translate(3px,-4px); }
-.venue-world .gallery-four:hover { transform: rotate(-1.7deg) translate(4px,-5px); }
 .venue-world .guide-list b,
 .venue-world .text-link span,
 .venue-world .arrival-grid article > a span,
@@ -512,7 +507,6 @@ footer small { opacity: .65; }
   .venue-world .scroll-cue::after { animation: none; }
   .venue-world .story-heading figure,
   .venue-world .mini-image,
-  .venue-world .gallery-grid figure,
   .venue-world .guide-list b,
   .venue-world .text-link span,
   .venue-world .arrival-grid article > a span,
@@ -1219,6 +1213,8 @@ footer small { opacity: .65; }
   border: 0;
   background: transparent;
   box-shadow: none;
+  pointer-events: none;
+  user-select: none;
 }
 .venue-world .gallery-grid img {
   inset: 0 !important;

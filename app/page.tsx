@@ -161,11 +161,9 @@ export default function Home() {
       <section className="story-section" id="story" aria-labelledby="story-title">
         <p className="eyebrow">How we got here</p>
         <div className="story-heading">
-          <p>OUR BEST DAYS<br />NEAR THE WATER</p>
           <figure>
-            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dog at the beach" width={1200} height={1458} loading="eager" />
+            <Image src={asset('/images/story-polaroid.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" width={1200} height={1458} loading="eager" />
           </figure>
-          <p>(USUALLY WITH<br />THE DOG)</p>
         </div>
         <h2 id="story-title">A lot of good days together.</h2>
         <div className="story-copy-layout">
@@ -174,16 +172,11 @@ export default function Home() {
             {loveStoryParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
         </div>
-        <div className="personal-details" aria-label="A few things about Madeline and Jack">
-          <p><span>Most likely found</span>At their neighborhood spot</p>
-          <p><span>Usually accompanied by</span>One very loved dog</p>
-          <p><span>Looking forward to</span>Everyone together at Dawnridge</p>
-        </div>
       </section>
 
-      <section className="photo-break" aria-label="Madeline and Jack at the beach">
-        <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack embracing on the beach" width={1800} height={1219} loading="eager" />
-        <p>A very good day at the beach.</p>
+      <section className="photo-break" aria-label="Madeline and Jack's engagement portraits">
+        <Image src={asset('/images/couple-embrace.webp')} alt="Madeline and Jack during their engagement portrait session" width={1800} height={1219} loading="eager" />
+        <p>Madeline &amp; Jack, engaged.</p>
       </section>
 
       <section className="details-section" id="details" aria-labelledby="details-title">
@@ -236,13 +229,13 @@ export default function Home() {
       </section>
 
       <section className="gallery-section" aria-labelledby="gallery-title">
-        <p className="eyebrow">A few favorite days</p>
-        <h2 id="gallery-title">Mostly near the water.</h2>
+        <p className="eyebrow">The engagement</p>
+        <h2 id="gallery-title">A few favorites.</h2>
         <div className="gallery-grid">
-          <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing at the beach" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
-          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking their dog on the beach" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
-          <figure className="gallery-three"><Image src={asset('/images/couple-dog.webp')} alt="Madeline and Jack with their dog" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
-          <figure className="gallery-four"><Image src={asset('/images/beach-family.webp')} alt="Madeline and Jack with their dog at the beach" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
+          <figure className="gallery-one"><Image src={asset('/images/couple-kiss.webp')} alt="Madeline and Jack kissing during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 30vw" loading="eager" /></figure>
+          <figure className="gallery-two"><Image src={asset('/images/beach-walk.webp')} alt="Madeline and Jack walking with their dog during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 50vw" loading="eager" /></figure>
+          <figure className="gallery-three"><Image src={asset('/images/couple-dog.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 26vw" loading="eager" /></figure>
+          <figure className="gallery-four"><Image src={asset('/images/beach-family.webp')} alt="Madeline and Jack with their dog during their engagement portrait session" fill sizes="(max-width: 700px) 90vw, 43vw" loading="eager" /></figure>
         </div>
       </section>
 

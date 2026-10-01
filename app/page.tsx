@@ -121,12 +121,6 @@ const nearbyGuide = [
     description: 'A landmark 1922 house and exhibition space in West Hollywood. Timed tickets are recommended, and it is a rewarding stop for design lovers.',
     href: 'https://www.makcenter.org/planyourvisit',
   },
-  {
-    name: 'Beverly Hills Farmers’ Market',
-    type: 'Sunday morning',
-    description: 'A certified neighborhood market held every Sunday from 8 AM to 1 PM, with produce, bread, prepared food, and free two-hour parking.',
-    href: 'https://beverlyhills.org/488/Farmers-Market',
-  },
 ];
 
 export default function Home() {
@@ -297,7 +291,7 @@ export default function Home() {
           <div className="section-number">03</div>
           <p className="eyebrow">Make a weekend of it</p>
           <h2 id="guide-title">Around Beverly Hills</h2>
-          <p>Seven places worth leaving the hotel for, from morning coffee to a quiet hour in the gardens.</p>
+          <p>Six places worth leaving the hotel for, from morning coffee to a quiet hour in the gardens.</p>
         </div>
         <div className="guide-list">
           {nearbyGuide.map((place, index) => (

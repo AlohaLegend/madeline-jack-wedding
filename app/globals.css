@@ -468,7 +468,7 @@ footer small { opacity: .65; }
   50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
 }
 
-/* Whimsical botanical and theatrical layer */
+/* Public-domain rosemary botanical layer */
 .venue-world .story-section,
 .venue-world .details-section,
 .venue-world .gallery-section,
@@ -490,10 +490,11 @@ footer small { opacity: .65; }
   content: '';
   position: absolute;
   z-index: 0;
-  width: clamp(230px,27vw,390px);
-  aspect-ratio: 380 / 240;
-  background: url('/images/dawnridge-cartouche.svg') center / contain no-repeat;
-  opacity: .11;
+  width: clamp(170px,18vw,250px);
+  height: clamp(430px,52vw,620px);
+  background: url('/images/rosemary-thome.png') center / contain no-repeat;
+  mix-blend-mode: multiply;
+  opacity: .12;
   pointer-events: none;
 }
 .venue-world .story-section > *,
@@ -506,41 +507,37 @@ footer small { opacity: .65; }
   z-index: 1;
 }
 .venue-world .story-section::after {
-  left: -70px;
-  bottom: -22px;
-  transform: rotate(8deg);
+  left: -48px;
+  bottom: -105px;
+  transform: scaleX(-1) rotate(-4deg);
 }
 .venue-world .details-section::after {
-  right: -66px;
-  top: 86px;
-  background-image: url('/images/dawnridge-ray.svg');
-  filter: invert(1);
-  opacity: .1;
-  transform: rotate(174deg);
+  right: -38px;
+  top: 72px;
+  filter: brightness(0) invert(1);
+  mix-blend-mode: normal;
+  opacity: .09;
+  transform: rotate(3deg);
 }
 .venue-world .travel-section::after {
-  left: -70px;
-  bottom: 45px;
-  background-image: url('/images/dawnridge-ray.svg');
-  opacity: .14;
-  transform: rotate(-5deg);
+  left: -44px;
+  bottom: -90px;
+  transform: scaleX(-1) rotate(-3deg);
 }
 .venue-world .guide-section::after {
-  right: -72px;
-  top: 44px;
-  background-image: url('/images/dawnridge-cartouche.svg');
-  transform: rotate(176deg);
+  right: -42px;
+  top: 54px;
+  transform: rotate(4deg);
 }
 .venue-world .faq-section::after {
-  left: -75px;
-  bottom: -16px;
-  transform: rotate(5deg);
+  left: -46px;
+  bottom: -100px;
+  transform: scaleX(-1) rotate(-5deg);
 }
 .venue-world .rsvp-section::after {
-  right: -58px;
-  bottom: -22px;
-  background-image: url('/images/dawnridge-ray.svg');
-  transform: rotate(178deg);
+  right: -42px;
+  bottom: -110px;
+  transform: rotate(3deg);
 }
 
 .venue-world .story-intro h2::after,
@@ -1566,20 +1563,10 @@ button:focus-visible,
 }
 .venue-world .story-copy p + p { margin-top: 1.25em; }
 
-/* First-name navigation and quieter footer sign-off */
-.venue-world .wordmark {
-  font-size: 18px;
-  letter-spacing: .035em;
-  text-transform: none;
-}
-.venue-world .wordmark span { margin: 0 .18em; }
+/* Quieter footer sign-off */
 .venue-world footer p { font-size: clamp(30px,3.7vw,54px); }
 
 @media (max-width: 640px) {
-  .venue-world .wordmark {
-    font-size: 16px;
-    letter-spacing: .02em;
-  }
   .venue-world footer p { font-size: 34px; }
 }
 

@@ -22,7 +22,7 @@ const display = Forum({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://thekleinicks.com/'),
-  title: 'Madeline Borehan & Jack Kleinick | April 10, 2026',
+  title: 'Madeline & Jack',
   description: 'Madeline Borehan and Jack Kleinick are getting married at Dawnridge in Beverly Hills on April 10, 2026. Find weekend plans, travel notes, and their guide to the area.',
   robots: {
     index: false,

@@ -128,7 +128,7 @@ export default function Home() {
     <main className="venue-world">
       <OpeningMoment />
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">Madeline <span>&amp;</span> Jack</a>
+        <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">M <span>·</span> J</a>
         <nav aria-label="Primary navigation">
           <a href="#story">Our story</a>
           <a href="#details">Weekend</a>

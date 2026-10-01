@@ -44,9 +44,9 @@ const faqs = [
 ];
 
 const loveStoryParagraphs = [
-  'These two lovebirds have been in each other’s lives for a full decade now. They met on the first day of college in a friend’s dorm room and quickly hit it off as friends. It famously takes people a while to like Jack, so for three years they were friends, classmates, and collaborators. They studied abroad together in Berlin and always had fun when they got to be in each other’s company. Madeline was always gracious enough to help with his homework, especially when he had not done any of it the night before.',
-  'The stars finally aligned one cold February night while friends were visiting the city. At the recently closed Kind Regards (RIP), under the shine of a disco ball, they finally got together, and the rest is history.',
-  'From road trips across the country and traveling around the world to visit family in England, to spending a pandemic with family and recording songs in a childhood bedroom, to raising a puppy together, they have spent the last seven years growing together and supporting one another while pursuing their dreams. <3',
+  'These two lovebirds have been in each other’s lives for a full decade now. They met on the first day of college in their dear friend Evan’s dorm room and quickly hit it off (as friends). Both are romantics who love a slow burn, so for three years, they were friends, classmates, and collaborators. Madeline was always gracious enough to help Jack with his homework, especially when he hadn’t done any of it the night before.',
+  'The stars finally aligned for Jack one cold February night when his best friends, Jake and Demitri, came to visit the city. At the recently closed Kind Regards (RIP), under the shine of a disco ball, the two finally got together, and the rest is history.',
+  'From road trips across the country and traveling around the world to surviving a pandemic at Peter and Tracy’s house, recording songs in Jack’s childhood bedroom, and even raising their beloved puppy together, Jack and Madeline have spent the last seven years growing together and supporting one another as they pursue their dreams. <3',
 ];
 
 const hotels = [

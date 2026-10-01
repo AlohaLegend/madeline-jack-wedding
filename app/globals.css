@@ -1249,3 +1249,32 @@ button:focus-visible,
   .site-header nav a[href="#guide"] { display: none; }
   .wordmark { margin-left: 20px; }
 }
+
+/* A restrained Art Deco display layer, while keeping body copy familiar. */
+.venue-world .section-number,
+.venue-world .wordmark,
+.venue-world .story-section h2,
+.venue-world .details-section h2,
+.venue-world .venue-copy h2,
+.venue-world .gallery-section h2,
+.venue-world .travel-section h2,
+.venue-world .guide-heading h2,
+.venue-world .faq-section h2,
+.venue-world .registry-section h2,
+.venue-world .rsvp-section h2,
+.venue-world footer p,
+.opening-center b {
+  font-family: var(--font-display), var(--font-serif), Georgia, serif;
+}
+
+.venue-world .story-section h2,
+.venue-world .details-section h2,
+.venue-world .venue-copy h2,
+.venue-world .gallery-section h2,
+.venue-world .travel-section h2,
+.venue-world .guide-heading h2,
+.venue-world .faq-section h2,
+.venue-world .registry-section h2,
+.venue-world .rsvp-section h2 {
+  letter-spacing: -.025em;
+}

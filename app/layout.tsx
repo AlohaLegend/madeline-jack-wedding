@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Montserrat } from 'next/font/google';
+import { Cormorant_Garamond, Forum, Montserrat } from 'next/font/google';
 import './globals.css';
 
 const serif = Cormorant_Garamond({
@@ -12,6 +12,12 @@ const sans = Montserrat({
   variable: '--font-sans',
   subsets: ['latin'],
   weight: ['400', '500', '600'],
+});
+
+const display = Forum({
+  variable: '--font-display',
+  subsets: ['latin'],
+  weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -47,7 +53,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${serif.variable} ${sans.variable}`}>{children}</body>
+      <body className={`${serif.variable} ${sans.variable} ${display.variable}`}>{children}</body>
     </html>
   );
 }

@@ -130,7 +130,7 @@ const nearbyGuide = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="venue-world">
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Madeline Borehan and Jack Kleinick, home">M <span>·</span> J</a>
         <nav aria-label="Primary navigation">
@@ -211,6 +211,11 @@ export default function Home() {
         <div className="venue-copy">
           <p className="eyebrow">The setting</p>
           <h2 id="venue-title">Tucked into the hills.</h2>
+          <div className="venue-meta" aria-label="Dawnridge, built in 1949, Beverly Hills">
+            <span>Dawnridge</span>
+            <span>1949</span>
+            <span>Beverly Hills</span>
+          </div>
           <p>
             Jack and I cannot believe we get to share the evening with you at our dream
             venue! Dawnridge is the former home of set &amp; costume designer Tony Duquette.

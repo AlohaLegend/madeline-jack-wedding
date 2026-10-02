@@ -99,12 +99,6 @@ const nearbyGuide = [
     href: 'https://cheesestore.com/',
   },
   {
-    name: 'La Dolce Vita',
-    type: 'Dinner',
-    description: 'A small, old-school Italian dining room in Beverly Hills with red booths, low light, and a menu built for a long dinner. Reserve ahead.',
-    href: 'https://www.ladolcevitabeverlyhills.com/',
-  },
-  {
     name: 'Greystone Mansion',
     type: 'Gardens',
     description: 'Free public grounds at a historic Beverly Hills estate. Check the city site for hours and private-event closures.',
@@ -275,7 +269,7 @@ export default function Home() {
         <div className="guide-heading">
           <div className="section-number">03</div>
           <h2 id="guide-title">Around Beverly Hills</h2>
-          <p>Six places worth leaving the hotel for, from morning coffee to a quiet hour in the gardens.</p>
+          <p>Five places worth leaving the hotel for, from morning coffee to a quiet hour in the gardens.</p>
         </div>
         <div className="guide-list">
           {nearbyGuide.map((place, index) => (

@@ -135,7 +135,7 @@ export default function Home() {
           <Image className="hero-monogram" src={asset('/images/monogram-centered.png')} alt="Madeline Borehan and Jack Kleinick monogram" width={1300} height={398} priority />
           <h1 id="hero-title" className="sr-only">Madeline Borehan and Jack Kleinick are getting married</h1>
           <p>Are getting married</p>
-          <p className="hero-date">April 10, 2026</p>
+          <p className="hero-date">April 10, 2027</p>
         </div>
         <p className="hero-note hero-note-right">Dawnridge · Beverly Hills</p>
         <a className="scroll-cue" href="#story" aria-label="Continue to our story">Scroll</a>
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="section-number">01</div>
         <h2 id="details-title">The wedding weekend</h2>
         <p className="section-intro">
-          The celebration will take place on April 10, 2026, at Dawnridge in Beverly Hills.
+          The celebration will take place on April 10, 2027, at Dawnridge in Beverly Hills.
           The formal invitation will carry the timing, and this page will become the full
           weekend guide as plans are finalized.
         </p>

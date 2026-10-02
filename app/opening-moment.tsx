@@ -50,7 +50,7 @@ export default function OpeningMoment() {
         <span>J</span>
       </span>
       <span className="opening-center">
-        <span>April 10, 2026</span>
+        <span>April 10, 2027</span>
         <b>Madeline &amp; Jack</b>
         <i>Beverly Hills</i>
       </span>
